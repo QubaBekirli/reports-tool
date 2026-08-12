@@ -1,0 +1,142 @@
+[
+  {
+    "id": "HIPAA-001",
+    "source": "HIPAA Security Rule (45 CFR 164)",
+    "category": "HIPAA - Administrative Safeguards",
+    "requirement_text": "Covered entities must implement administrative safeguards including security management process (risk analysis, risk management, sanction policy), assigned security responsibility, workforce security, information access management, security awareness training, security incident procedures, and contingency planning. A security officer must be designated.",
+    "language": "en"
+  },
+  {
+    "id": "HIPAA-002",
+    "source": "HIPAA Security Rule (45 CFR 164)",
+    "category": "HIPAA - Physical Safeguards",
+    "requirement_text": "Physical safeguards must include facility access controls, workstation use and security policies, and device and media controls (disposal, re-use, accountability, backups). Media containing ePHI must be stored securely and access must be limited to authorized personnel.",
+    "language": "en"
+  },
+  {
+    "id": "HIPAA-003",
+    "source": "HIPAA Security Rule (45 CFR 164)",
+    "category": "HIPAA - Technical Safeguards",
+    "requirement_text": "Technical safeguards must include access control (unique user IDs, emergency access, automatic logoff, encryption), audit controls, integrity controls, and person or entity authentication. ePHI must be encrypted wherever deemed appropriate after risk assessment.",
+    "language": "en"
+  },
+  {
+    "id": "HIPAA-004",
+    "source": "HIPAA Breach Notification Rule (45 CFR 164.400-414)",
+    "category": "HIPAA - Breach Notification",
+    "requirement_text": "Breaches of unsecured PHI affecting 500+ individuals must be reported to HHS within 60 days and to affected individuals without unreasonable delay. Breaches affecting fewer than 500 individuals must be reported annually. Media notification is required for breaches affecting 500+ residents of a state.",
+    "language": "en"
+  },
+  {
+    "id": "CCPA-001",
+    "source": "CCPA/CPRA (California Consumer Privacy Act)",
+    "category": "CCPA - Consumer Rights",
+    "requirement_text": "California residents have the right to know what personal information is collected, request deletion, request data portability, opt-out of sale or sharing, and limit use of sensitive personal information. Businesses must provide notice at collection and respond to requests within 45 days.",
+    "language": "en"
+  },
+  {
+    "id": "CCPA-002",
+    "source": "CCPA/CPRA (California Consumer Privacy Act)",
+    "category": "CCPA - Business Obligations",
+    "requirement_text": "Businesses must implement reasonable security measures to protect personal information. Data protection assessments must be conducted for high-risk processing. Service provider contracts must include data protection terms. A Do Not Sell or Share My Personal Information link must be provided on the website.",
+    "language": "en"
+  },
+  {
+    "id": "PIPL-001",
+    "source": "PIPL (China Personal Information Protection Law)",
+    "category": "PIPL - Data Processing",
+    "requirement_text": "Personal information processing must have a lawful basis: consent, contract necessity, legal duty, public health, news reporting, or other circumstances specified by law. Sensitive personal information requires separate consent. Processing must follow principles of necessity, good faith, and minimal scope.",
+    "language": "en"
+  },
+  {
+    "id": "PIPL-002",
+    "source": "PIPL (China Personal Information Protection Law)",
+    "category": "PIPL - Cross-Border Transfer",
+    "requirement_text": "Cross-border transfers of personal information must pass a security assessment by the Cyberspace Administration of China (CAC), obtain certification, or enter into standard contracts. Data exporters must conduct PIPIA (Personal Information Protection Impact Assessment) before transfer. Recipients must meet protection standards.",
+    "language": "en"
+  },
+  {
+    "id": "PDPA-001",
+    "source": "PDPA (Singapore Personal Data Protection Act)",
+    "requirement_text": "Organizations must obtain consent for collection, use, and disclosure of personal data. Purpose must be reasonable and notified. Data protection officer must be appointed. Data breach notification is mandatory for breaches causing significant harm or affecting 500+ individuals, within 3 calendar days.",
+    "category": "PDPA - Data Protection",
+    "language": "en"
+  },
+  {
+    "id": "LGPD-001",
+    "source": "LGPD (Brazil Lei Geral de Proteção de Dados)",
+    "category": "LGPD - Data Processing",
+    "requirement_text": "Personal data processing must have a lawful basis from 10 options including consent, contract, legal obligation, legitimate interest. Sensitive data requires separate consent. Data subjects have rights to access, correction, deletion, portability, and information about sharing. ANPD must be notified of breaches.",
+    "language": "en"
+  },
+  {
+    "id": "PIPEDA-001",
+    "source": "PIPEDA (Canada Personal Information Protection Act)",
+    "category": "PIPEDA - Privacy Principles",
+    "requirement_text": "Organizations must follow 10 fair information principles: accountability, identifying purposes, consent, limiting collection, limiting use, accuracy, safeguards, openness, individual access, and challenging compliance. Privacy policies must be publicly available. Breaches with real risk of significant harm must be reported.",
+    "language": "en"
+  },
+  {
+    "id": "UK-DPA-001",
+    "source": "UK Data Protection Act 2018 / UK GDPR",
+    "category": "UK GDPR - Data Protection",
+    "requirement_text": "UK GDPR mirrors EU GDPR requirements for UK-based processing. ICO must be notified of personal data breaches within 72 hours. Data subjects have rights to access, rectification, erasure, restriction, portability, and objection. International transfers require UK adequacy regulations or safeguards.",
+    "language": "en"
+  },
+  {
+    "id": "AZ-DATA-001",
+    "source": "Azərbaycan Fərdi Məlumatların Qorunması Qanunu",
+    "category": "Azərbaycan - Data Protection",
+    "requirement_text": "Fərdi məlumatların işlənməsi mülki və ya yazılı razılıq əsasında aparılmalıdır. Fərdi məlumatların toplanması məqsədi, miqdarı və saxlanma müddəti müəyyən edilməlidir. Məlumat subyektlərinin məlumatlara giriş, düzəliş və silmə hüquqları təmin edilməlidir.",
+    "language": "az"
+  },
+  {
+    "id": "AZ-DATA-002",
+    "source": "Azərbaycan Fərdi Məlumatların Qorunması Qanunu",
+    "category": "Azərbaycan - Cross-Border Data Transfer",
+    "requirement_text": "Fərdi məlumatların xaricə köçürülməsi yalnız adekvat qoruyucu tədbirlər və məlumat subyektinin razılığı ilə mümkündür. Beynəlxalq məlumat transferi üçün əlavə qoruyucu tədbirlər və müqavilə şərtləri tələb olunur.",
+    "language": "az"
+  },
+  {
+    "id": "DATA-REG-001",
+    "source": "ISO/IEC 27552 Privacy Management",
+    "category": "ISO 27552 - Privacy Management",
+    "requirement_text": "A privacy management system must be established covering privacy policies, data mapping, lawful basis documentation, consent management, data subject rights processing, privacy impact assessments, and breach notification. Privacy objectives must be aligned with business strategy and reviewed by top management.",
+    "language": "en"
+  },
+  {
+    "id": "DATA-REG-002",
+    "source": "NIST SP 800-122 Guide to Protecting PII",
+    "category": "NIST 800-122 - PII Protection",
+    "requirement_text": "PII must be identified, inventoried, and protected through access controls, encryption, minimization, anonymization, and secure disposal. PII impact assessments must determine confidentiality impact level (low, moderate, high). Controls must be proportional to impact level.",
+    "language": "en"
+  },
+  {
+    "id": "DATA-REG-003",
+    "source": "NIST Privacy Framework 1.0",
+    "category": "NIST Privacy Framework",
+    "requirement_text": "The NIST Privacy Framework must be used to identify, govern, control, communicate, and protect privacy risks. Privacy risk must be managed through system design, data actions, and privacy engineering. Privacy practices must be integrated into organizational processes and reviewed regularly.",
+    "language": "en"
+  },
+  {
+    "id": "DATA-REG-004",
+    "source": "OECD Privacy Guidelines",
+    "category": "OECD - Privacy Principles",
+    "requirement_text": "Organizations must follow OECD privacy principles: collection limitation, data quality, purpose specification, use limitation, security safeguards, openness, individual participation, and accountability. Privacy must be embedded into system design (privacy by design). Cross-border flows must ensure equivalent protection.",
+    "language": "en"
+  },
+  {
+    "id": "DATA-REG-005",
+    "source": "APEC Cross-Border Privacy Rules (CBPR)",
+    "category": "APEC - Cross-Border Privacy",
+    "requirement_text": "Organizations participating in APEC cross-border data flows must comply with CBPR system requirements: accountability, notice, consent, access, correction, security safeguards, and dispute resolution. Data controllers must be accountable for personal data transferred across APEC economies.",
+    "language": "en"
+  },
+  {
+    "id": "DATA-REG-006",
+    "source": "ISO/IEC 20889 Privacy-Enhancing Data De-identification Techniques",
+    "category": "ISO 20889 - De-identification",
+    "requirement_text": "Data de-identification techniques must be applied where direct identifiers need to be removed: anonymization, pseudonymization, generalization, suppression, randomization, and k-anonymity. De-identification effectiveness must be evaluated against re-identification risk. Techniques must be documented.",
+    "language": "en"
+  }
+]

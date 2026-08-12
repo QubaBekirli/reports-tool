@@ -1,0 +1,142 @@
+[
+  {
+    "id": "ISO-27017-001",
+    "source": "ISO/IEC 27017 Cloud Security",
+    "category": "ISO 27017 - Cloud Security Controls",
+    "requirement_text": "Cloud security controls must address shared responsibility between cloud provider and customer. Controls must include virtual environment segmentation, virtual machine hardening, cloud-specific access management, and cloud administrative interface security. Responsibilities must be documented in contracts.",
+    "language": "en"
+  },
+  {
+    "id": "CSA-CCM-001",
+    "source": "Cloud Security Alliance Cloud Controls Matrix (CCM) v4",
+    "category": "CSA CCM - Cloud Governance",
+    "requirement_text": "Cloud governance must define cloud strategy, risk appetite, and accountability. Cloud usage must be governed through policies, approved provider lists, and cloud security architecture. Shadow IT must be detected and remediated. Cloud spending and security posture must be monitored.",
+    "language": "en"
+  },
+  {
+    "id": "CSA-CCM-002",
+    "source": "Cloud Security Alliance Cloud Controls Matrix (CCM) v4",
+    "category": "CSA CCM - Cloud IAM",
+    "requirement_text": "Cloud IAM must enforce least privilege, MFA for all users, role-based access, conditional access policies, and privileged identity management. Cloud service accounts must be monitored and rotated. IAM policy changes must be logged and alerted. Unused identities must be removed.",
+    "language": "en"
+  },
+  {
+    "id": "CSA-STAR-001",
+    "source": "CSA Security Trust Assurance and Risk (STAR)",
+    "category": "CSA STAR - Transparency",
+    "requirement_text": "Cloud providers must demonstrate security posture transparency through CSA STAR Registry entries (Self-Assessment, Third-Party Audit, or Continuous Auditing). Customers must verify provider STAR entries during due diligence. Security posture must be continuously monitored, not point-in-time.",
+    "language": "en"
+  },
+  {
+    "id": "NIST-800-144-001",
+    "source": "NIST SP 800-144 Cloud Computing Security",
+    "category": "NIST 800-144 - Cloud Security",
+    "requirement_text": "Cloud security must address governance, compliance, trust, architecture, identity, software isolation, data protection, availability, and incident response. Cloud service models (IaaS, PaaS, SaaS) must be assessed for residual risk. Security responsibilities must be allocated per the shared responsibility model.",
+    "language": "en"
+  },
+  {
+    "id": "CIS-CONTROLS-001",
+    "source": "CIS Critical Security Controls v8",
+    "category": "CIS - Basic Controls (IG1)",
+    "requirement_text": "CIS Basic Controls (Implementation Group 1) must be implemented: inventory of enterprise assets, inventory of software assets, data protection, secure configuration, account management, access control management. These represent cyber hygiene fundamentals required for all organizations.",
+    "language": "en"
+  },
+  {
+    "id": "CIS-CONTROLS-002",
+    "source": "CIS Critical Security Controls v8",
+    "category": "CIS - Foundational Controls (IG2)",
+    "requirement_text": "CIS Foundational Controls (Implementation Group 2) must be implemented for organizations with moderate risk: email and web browser protections, malware defenses, limitation and control of network ports, data recovery, security monitoring, network monitoring, penetration testing, and incident response management.",
+    "language": "en"
+  },
+  {
+    "id": "CIS-CONTROLS-003",
+    "source": "CIS Critical Security Controls v8",
+    "category": "CIS - Organizational Controls (IG3)",
+    "requirement_text": "CIS Organizational Controls (Implementation Group 3) must be implemented for high-risk organizations: application software security, incident response, penetration testing, attack surface management, active attack detection, isolation of systems, and security awareness. Red team exercises must be conducted.",
+    "language": "en"
+  },
+  {
+    "id": "NIST-CSF-001",
+    "source": "NIST Cybersecurity Framework 2.0",
+    "category": "NIST CSF 2.0 - Govern",
+    "requirement_text": "The Govern function must establish organizational cybersecurity strategy, policy, roles, responsibilities, and risk management decisions. Governance must align cybersecurity with business objectives. Leadership must make risk-informed decisions. Cybersecurity risk must be managed as enterprise risk.",
+    "language": "en"
+  },
+  {
+    "id": "NIST-CSF-002",
+    "source": "NIST Cybersecurity Framework 2.0",
+    "category": "NIST CSF 2.0 - Identify",
+    "requirement_text": "The Identify function must establish asset management, risk assessment, strategy, and improvement. All physical and software assets must be inventoried. Business environment, governance, risk assessment, and risk management strategy must be documented and maintained.",
+    "language": "en"
+  },
+  {
+    "id": "NIST-CSF-003",
+    "source": "NIST Cybersecurity Framework 2.0",
+    "category": "NIST CSF 2.0 - Protect",
+    "requirement_text": "The Protect function must implement access control, awareness training, data security, information protection processes, maintenance, and protective technology. Data must be protected in transit and at rest. Protective measures must be commensurate with risk.",
+    "language": "en"
+  },
+  {
+    "id": "NIST-CSF-004",
+    "source": "NIST Cybersecurity Framework 2.0",
+    "category": "NIST CSF 2.0 - Detect",
+    "requirement_text": "The Detect function must implement continuous security monitoring, anomaly and event detection, and detection processes. Security monitoring must cover networks, endpoints, cloud, and applications. Detection capabilities must be tested through threat hunting and purple team exercises.",
+    "language": "en"
+  },
+  {
+    "id": "NIST-CSF-005",
+    "source": "NIST Cybersecurity Framework 2.0",
+    "category": "NIST CSF 2.0 - Respond",
+    "requirement_text": "The Respond function must implement response planning, communications, analysis, mitigation, and improvements. Incident response plans must be tested annually. Stakeholder communication procedures must be defined. Post-incident analysis must drive continuous improvement.",
+    "language": "en"
+  },
+  {
+    "id": "NIST-CSF-006",
+    "source": "NIST Cybersecurity Framework 2.0",
+    "category": "NIST CSF 2.0 - Recover",
+    "requirement_text": "The Recover function must implement recovery planning, improvements, and communications. Recovery procedures must restore systems and data to normal operation. Recovery time objectives must be met. Recovery communication must keep stakeholders informed during and after incidents.",
+    "language": "en"
+  },
+  {
+    "id": "SECURE-SDLC-001",
+    "source": "NIST SP 800-160 Secure Software Development",
+    "category": "Secure SDLC - Requirements",
+    "requirement_text": "Security requirements must be defined for each software project covering confidentiality, integrity, availability, authentication, authorization, auditing, and compliance. Requirements must be traceable from design through testing. Misuse cases and abuse cases must be developed alongside use cases.",
+    "language": "en"
+  },
+  {
+    "id": "SECURE-SDLC-002",
+    "source": "NIST SP 800-218 Secure Software Development Framework (SSDF)",
+    "category": "SSDF - Po.1 Define Security Requirements",
+    "requirement_text": "Security requirements for software development must be defined and documented including regulatory, customer, and internal requirements. Requirements must be tracked throughout the development lifecycle. Security requirements must be reviewed and approved before development begins.",
+    "language": "en"
+  },
+  {
+    "id": "SECURE-SDLC-003",
+    "source": "NIST SP 800-218 Secure Software Development Framework (SSDF)",
+    "category": "SSDF - PS.1 Protect Source Code",
+    "requirement_text": "Source code must be protected from unauthorized access and modification. Repositories must require authentication and authorization. Commits must be attributed to identified users. Branch protection and code review must be enforced for production branches. Secrets must not be committed to repositories.",
+    "language": "en"
+  },
+  {
+    "id": "SECURE-SDLC-004",
+    "source": "NIST SP 800-218 Secure Software Development Framework (SSDF)",
+    "category": "SSDF - PW.1 Design for Security",
+    "requirement_text": "Software must be designed to minimize vulnerabilities through threat modeling, attack surface reduction, secure architecture review, and secure design patterns. Trust boundaries must be identified. Security design must be reviewed and approved before implementation.",
+    "language": "en"
+  },
+  {
+    "id": "SECURE-SDLC-005",
+    "source": "NIST SP 800-218 Secure Software Development Framework (SSDF)",
+    "category": "SSDF - PW.7 Review Code",
+    "requirement_text": "Code must be reviewed for security vulnerabilities before deployment. Reviews must include both manual review and automated static analysis (SAST). Findings must be remediated before merging. Code review must verify adherence to secure coding standards (e.g., OWASP ASVS, CERT).",
+    "language": "en"
+  },
+  {
+    "id": "SECURE-SDLC-006",
+    "source": "NIST SP 800-218 Secure Software Development Framework (SSDF)",
+    "category": "SSDF - RV.1 Respond to Vulnerabilities",
+    "requirement_text": "Vulnerabilities reported through any channel (internal testing, bug bounty, researcher reports) must be triaged, prioritized, and remediated within defined SLAs. Critical vulnerabilities must be remediated within 7 days. Vulnerability remediation must be verified before closing.",
+    "language": "en"
+  }
+]

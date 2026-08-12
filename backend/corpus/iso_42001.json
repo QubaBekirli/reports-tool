@@ -1,0 +1,170 @@
+[
+  {
+    "id": "ISO-42001-001",
+    "source": "ISO/IEC 42001",
+    "category": "Clause 4 - Context",
+    "requirement_text": "The organization must determine the internal and external issues that affect its ability to achieve the intended outcomes of its AI management system. These issues must include AI-specific risks and opportunities.",
+    "language": "en"
+  },
+  {
+    "id": "ISO-42001-002",
+    "source": "ISO/IEC 42001",
+    "category": "Clause 5 - Leadership",
+    "requirement_text": "Top management must demonstrate leadership and commitment to the AI management system by ensuring AI policy is established and aligned with organizational strategy.",
+    "language": "en"
+  },
+  {
+    "id": "ISO-42001-003",
+    "source": "ISO/IEC 42001",
+    "category": "Clause 5 - AI Policy",
+    "requirement_text": "An AI policy must be established, implemented, and maintained. The policy must include commitments to comply with requirements and continually improve the AI management system.",
+    "language": "en"
+  },
+  {
+    "id": "ISO-42001-004",
+    "source": "ISO/IEC 42001",
+    "category": "Clause 5 - Roles",
+    "requirement_text": "Roles, responsibilities, and authorities for AI system-related roles must be assigned, communicated, and maintained. An AI management system owner must be designated.",
+    "language": "en"
+  },
+  {
+    "id": "ISO-42001-005",
+    "source": "ISO/IEC 42001",
+    "category": "Clause 6 - Risk Assessment",
+    "requirement_text": "The organization must plan and implement a risk assessment process for AI systems. Risks must be identified, analyzed, evaluated, and treated according to the organization's risk criteria.",
+    "language": "en"
+  },
+  {
+    "id": "ISO-42001-006",
+    "source": "ISO/IEC 42001",
+    "category": "Clause 6 - AI Risk Treatment",
+    "requirement_text": "AI risk treatment options must be selected and implemented. Treatment plans must include controls, responsibilities, timelines, and verification of effectiveness.",
+    "language": "en"
+  },
+  {
+    "id": "ISO-42001-007",
+    "source": "ISO/IEC 42001",
+    "category": "Clause 7 - Resources",
+    "requirement_text": "The organization must determine and provide the resources needed for the establishment, implementation, maintenance, and continual improvement of the AI management system.",
+    "language": "en"
+  },
+  {
+    "id": "ISO-42001-008",
+    "source": "ISO/IEC 42001",
+    "category": "Clause 7 - Competence",
+    "requirement_text": "The organization must determine the necessary competence of persons doing work that affects AI system performance and ensure they are competent on the basis of education, training, or experience.",
+    "language": "en"
+  },
+  {
+    "id": "ISO-42001-009",
+    "source": "ISO/IEC 42001",
+    "category": "Clause 7 - Awareness",
+    "requirement_text": "Persons doing work under the organization's control must be aware of the AI policy, their contribution to the AI management system, and the implications of not conforming to requirements.",
+    "language": "en"
+  },
+  {
+    "id": "ISO-42001-010",
+    "source": "ISO/IEC 42001",
+    "category": "Clause 7 - Communication",
+    "requirement_text": "The organization must determine the need for internal and external communications relevant to the AI management system, including what, when, with whom, and how to communicate.",
+    "language": "en"
+  },
+  {
+    "id": "ISO-42001-011",
+    "source": "ISO/IEC 42001",
+    "category": "Clause 7 - Documented Information",
+    "requirement_text": "The AI management system must include documented information required by the standard and determined by the organization as necessary for effectiveness.",
+    "language": "en"
+  },
+  {
+    "id": "ISO-42001-012",
+    "source": "ISO/IEC 42001",
+    "category": "Clause 8 - Operational Planning",
+    "requirement_text": "The organization must plan, implement, and control the processes needed to meet AI system requirements. This includes establishing criteria for AI system processes and implementing controls.",
+    "language": "en"
+  },
+  {
+    "id": "ISO-42001-013",
+    "source": "ISO/IEC 42001",
+    "category": "Clause 8 - AI System Requirements",
+    "requirement_text": "The organization must establish requirements for AI systems. Requirements must address functionality, performance, safety, security, privacy, and ethical considerations.",
+    "language": "en"
+  },
+  {
+    "id": "ISO-42001-014",
+    "source": "ISO/IEC 42001",
+    "category": "Clause 8 - Data Management",
+    "requirement_text": "The organization must establish and maintain processes for data management relevant to AI systems. This includes data acquisition, quality, provenance, preparation, and governance.",
+    "language": "en"
+  },
+  {
+    "id": "ISO-42001-015",
+    "source": "ISO/IEC 42001",
+    "category": "Clause 8 - AI System Development",
+    "requirement_text": "The organization must establish processes for AI system development, including design, training, testing, and validation. Development processes must be documented and controlled.",
+    "language": "en"
+  },
+  {
+    "id": "ISO-42001-016",
+    "source": "ISO/IEC 42001",
+    "category": "Clause 8 - AI System Deployment",
+    "requirement_text": "The organization must establish and maintain processes for AI system deployment. Deployment must include verification, validation, and confirmation that the system meets requirements.",
+    "language": "en"
+  },
+  {
+    "id": "ISO-42001-017",
+    "source": "ISO/IEC 42001",
+    "category": "Clause 8 - AI System Operation",
+    "requirement_text": "The organization must establish and maintain processes for AI system operation and monitoring. This includes performance tracking, incident management, and change control.",
+    "language": "en"
+  },
+  {
+    "id": "ISO-42001-018",
+    "source": "ISO/IEC 42001",
+    "category": "Clause 9 - Performance Evaluation",
+    "requirement_text": "The organization must monitor, measure, analyze, and evaluate the AI management system. Internal audits must be conducted at planned intervals.",
+    "language": "en"
+  },
+  {
+    "id": "ISO-42001-019",
+    "source": "ISO/IEC 42001",
+    "category": "Clause 9 - Management Review",
+    "requirement_text": "Top management must review the AI management system at planned intervals to ensure its continuing suitability, adequacy, and effectiveness.",
+    "language": "en"
+  },
+  {
+    "id": "ISO-42001-020",
+    "source": "ISO/IEC 42001",
+    "category": "Clause 10 - Improvement",
+    "requirement_text": "The organization must continually improve the suitability, adequacy, and effectiveness of the AI management system. Nonconformities must be corrected and their causes addressed.",
+    "language": "en"
+  },
+  {
+    "id": "ISO-42001-021",
+    "source": "ISO/IEC 42001",
+    "category": "Clause 8 - Data Governance",
+    "requirement_text": "The organization must establish data governance processes for AI systems including data classification, data quality assessment, data lineage tracking, and data retention policies.",
+    "language": "en"
+  },
+  {
+    "id": "ISO-42001-022",
+    "source": "ISO/IEC 42001",
+    "category": "Clause 8 - AI Security Controls",
+    "requirement_text": "Security controls specific to AI systems must be implemented including model access control, inference security, prompt injection prevention, and output filtering.",
+    "language": "en"
+  },
+  {
+    "id": "ISO-42001-023",
+    "source": "ISO/IEC 42001",
+    "category": "Clause 8 - AI System Monitoring",
+    "requirement_text": "AI system monitoring must include model drift detection, data drift detection, bias monitoring, performance degradation tracking, and security event detection.",
+    "language": "en"
+  },
+  {
+    "id": "ISO-42001-024",
+    "source": "ISO/IEC 42001",
+    "category": "Clause 6 - AI Impact Assessment",
+    "requirement_text": "AI impact assessment must be conducted to evaluate potential impacts on individuals, society, and the organization. Assessment must cover fundamental rights, safety, privacy, and ethical implications.",
+    "language": "en"
+  }
+]

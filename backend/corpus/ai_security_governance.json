@@ -1,0 +1,142 @@
+[
+  {
+    "id": "AISG-001",
+    "source": "AI Security Governance Framework",
+    "category": "AI Model Lifecycle Management",
+    "requirement_text": "AI modellərinin həyat dövrü idarə edilməlidir: model seçimi, təlim, validasiya, yerləşdirmə və istismardan çıxarma mərhələləri sənədləşdirilməli və icra edilməlidir. Hər mərhələ üçün təhlükəsizlik yoxlamaları müəyyən edilməlidir.",
+    "language": "az"
+  },
+  {
+    "id": "AISG-002",
+    "source": "AI Security Governance Framework",
+    "category": "AI Model Lifecycle Management",
+    "requirement_text": "AI modelinin təlim məlumatlarının mənşəyi (provenance) qeyd edilməli, məlumat keyfiyyəti qiymətləndirilməli və potensial bias riskləri analiz edilməlidir. Təlim məlumatlarında zəhərli (poisoned) məlumat olmaması üçün yoxlama aparılmalıdır.",
+    "language": "az"
+  },
+  {
+    "id": "AISG-003",
+    "source": "AI Security Governance Framework",
+    "category": "AI Model Security",
+    "requirement_text": "AI modelləri adversarial hücumlara (adversarial attacks) qarşı qiymətləndirilməlidir. Modelin input manipulyasiyasına, prompt injection-a və model ekstraksiyasına (model extraction) qarşı müqaviməti test edilməlidir.",
+    "language": "az"
+  },
+  {
+    "id": "AISG-004",
+    "source": "AI Security Governance Framework",
+    "category": "AI Model Security",
+    "requirement_text": "AI modelinin inference zamanı prompt injection, jailbreak və digər manipulyasiya cəhdlərinin qarşısı alınmalıdır. Input validation və output filtering mexanizmləri tətbiq edilməlidir.",
+    "language": "az"
+  },
+  {
+    "id": "AISG-005",
+    "source": "AI Security Governance Framework",
+    "category": "AI Model Security",
+    "requirement_text": "AI model çıxışları (outputs) təhlükəsizlik baxımından yoxlanılmalıdır: zərərli kod generasiyası, sensitive məlumat ifşası, hallüsination riskləri və uyğunsuz məzmun üçün output filtering tətbiq edilməlidir.",
+    "language": "az"
+  },
+  {
+    "id": "AISG-006",
+    "source": "AI Security Governance Framework",
+    "category": "AI Governance & Accountability",
+    "requirement_text": "AI sisteminin qərarları üçün aydın məsuliyyət xətti müəyyən edilməlidir. AI qərarlarına görə məsul şəxs və ya komitə təyin edilməli, qərarların izah edilə bilməsi (explainability) təmin edilməlidir.",
+    "language": "az"
+  },
+  {
+    "id": "AISG-007",
+    "source": "AI Security Governance Framework",
+    "category": "AI Governance & Accountability",
+    "requirement_text": "AI sisteminin şəffaflığı təmin edilməlidir: istifadəçilər AI ilə qarşılıqlı əlaqədə olduqlarını bilməlidirlər. Modelin imkanları, məhdudiyyətləri və potensial riskləri haqqında məlumat verilməlidir.",
+    "language": "az"
+  },
+  {
+    "id": "AISG-008",
+    "source": "AI Security Governance Framework",
+    "category": "AI Governance & Accountability",
+    "requirement_text": "AI sisteminin insan nəzarətində (human-in-the-loop) olması təmin edilməlidir. Kritik qərarlarda AI yalnız tövsiyə verməli, yekun qərarı insan tərəfindən təsdiq edilməlidir.",
+    "language": "az"
+  },
+  {
+    "id": "AISG-009",
+    "source": "AI Security Governance Framework",
+    "category": "AI Risk Assessment",
+    "requirement_text": "AI sistemi üçün risk qiymətləndirmə aparılmalıdır: bias və ədalət (fairness), privacy, təhlükəsizlik, etika və sosial təsir riskləri identifikasiya edilməli, qiymətləndirilməli və müalicə planı hazırlanmalıdır.",
+    "language": "az"
+  },
+  {
+    "id": "AISG-010",
+    "source": "AI Security Governance Framework",
+    "category": "AI Risk Assessment",
+    "requirement_text": "AI sisteminin potensial zərərli istifadəsi (dual-use, malicious use) qiymətləndirilməlidir. Modelin gücü, təsir dairəsi və sui-istifadə potensialı üçün risk analizi aparılmalıdır.",
+    "language": "az"
+  },
+  {
+    "id": "AISG-011",
+    "source": "AI Security Governance Framework",
+    "category": "AI Monitoring & Operations",
+    "requirement_text": "AI sistemi istismar zamanı müntəzəm monitorinq olunmalıdır: model drift, data drift, performans azalması, bias yığılması və təhlükəsizlik insidentləri aşkarlanmalıdır.",
+    "language": "az"
+  },
+  {
+    "id": "AISG-012",
+    "source": "AI Security Governance Framework",
+    "category": "AI Monitoring & Operations",
+    "requirement_text": "AI sisteminin audit yolu (audit trail) saxlanmalıdır: kim, nə vaxt, hansı sorğunu etdi, model hansı cavabı verdi, hansı məlumatı istifadə etdi. Audit loqları məxfilik qorunaraq saxlanmalıdır.",
+    "language": "az"
+  },
+  {
+    "id": "AISG-013",
+    "source": "AI Security Governance Framework",
+    "category": "AI Incident Response",
+    "requirement_text": "AI-spesifik insident idarəetmə prosesi olmalıdır: model manipulyasiyası, zərərli çıxış, data poisoning, model oğurluğu və digər AI-spesifik insidentlər üçün prosedur müəyyən edilməlidir.",
+    "language": "az"
+  },
+  {
+    "id": "AISG-014",
+    "source": "AI Security Governance Framework",
+    "category": "AI Data Protection",
+    "requirement_text": "AI sisteminə verilən input və output məlumatlarında sensitive məlumat (PII, maliyyə məlumatı, sirlər) qorunmalıdır. Prompt-larda sensitive məlumat ifşa olunmamalı, məlumat minimallaşdırma tətbiq edilməlidir.",
+    "language": "az"
+  },
+  {
+    "id": "AISG-015",
+    "source": "AI Security Governance Framework",
+    "category": "AI Data Protection",
+    "requirement_text": "AI modelinin təlim və inference məlumatlarının məxfiliyi təmin edilməlidir. Differential privacy, federated learning və ya digər məxfilik-qoruyan texnikalar mülahizə edilməlidir.",
+    "language": "az"
+  },
+  {
+    "id": "AISG-016",
+    "source": "AI Security Governance Framework",
+    "category": "AI Supply Chain Security",
+    "requirement_text": "AI modelinin təchizat zənciri təhlükəsizliyi təmin edilməlidir: pre-trained modellərin mənbəyi doğrulanmalı, open-source modellərin təhlükəsizliyi qiymətləndirilməli, model fayllarının bütövlüyü yoxlanılmalıdır.",
+    "language": "az"
+  },
+  {
+    "id": "AISG-017",
+    "source": "AI Security Governance Framework",
+    "category": "AI Supply Chain Security",
+    "requirement_text": "AI sistemində istifadə olunan üçüncü tərəf API-lər, plugin-lər və tool-lar təhlükəsizlik baxımından qiymətləndirilməlidir. Tool use və function calling üçün icazə və məhdudiyyət siyasəti müəyyən edilməlidir.",
+    "language": "az"
+  },
+  {
+    "id": "AISG-018",
+    "source": "AI Security Governance Framework",
+    "category": "AI Compliance & Ethics",
+    "requirement_text": "AI sistemi qanunvericilik tələblərinə (fərdi məlumatların qorunması, kibertəhlükəsizlik, sektor-spesifik tələblər) uyğunluq baxımından müntəzəm qiymətləndirilməlidir. Etika prinsipləri (ədalət, şəffaflıq, məsuliyyət) tətbiq edilməlidir.",
+    "language": "az"
+  },
+  {
+    "id": "AISG-019",
+    "source": "AI Security Governance Framework",
+    "category": "AI Compliance & Ethics",
+    "requirement_text": "AI sisteminin bias və ədalət qiymətləndirilməsi müntəzəm aparılmalıdır. Demographic parity, equalized odds və digər ədalət metrikaları ölçülməli, bias aşkarlanarsa düzəliş tədbirləri görülməlidir.",
+    "language": "az"
+  },
+  {
+    "id": "AISG-020",
+    "source": "AI Security Governance Framework",
+    "category": "AI Change Management",
+    "requirement_text": "AI modelinin yenidən təlimi, versiya yenilənməsi və konfiqurasiya dəyişiklikləri change management prosesinə tabe edilməlidir. Dəyişikliklər risk qiymətləndirməsindən sonra tətbiq edilməlidir.",
+    "language": "az"
+  }
+]

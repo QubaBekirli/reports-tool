@@ -1,0 +1,149 @@
+[
+  {
+    "id": "ISO-27036-001",
+    "source": "ISO/IEC 27036 Information Security for Supplier Relationships",
+    "category": "ISO 27036 - Supplier Security",
+    "requirement_text": "Information security for supplier relationships must be managed through a documented framework covering supplier classification, risk assessment, security requirements in contracts, monitoring, and termination. Critical suppliers must undergo annual security assessments. Supplier security incidents must be reported and managed.",
+    "language": "en"
+  },
+  {
+    "id": "ISO-27036-002",
+    "source": "ISO/IEC 27036 Information Security for Supplier Relationships",
+    "category": "ISO 27036 - Cloud Services",
+    "requirement_text": "Cloud service supplier relationships must include defined shared responsibility matrix, data classification alignment, encryption requirements, audit rights, breach notification timelines, and exit/portability provisions. Cloud supplier sub-processors must be disclosed and approved.",
+    "language": "en"
+  },
+  {
+    "id": "ISO-27014-001",
+    "source": "ISO/IEC 27014 Governance of Information Security",
+    "category": "ISO 27014 - Security Governance",
+    "requirement_text": "Information security governance must be established as a subset of corporate governance. The governing body must set security direction, ensure risk management, allocate resources, and verify security effectiveness. Security governance must align with business strategy and culture.",
+    "language": "en"
+  },
+  {
+    "id": "ISO-27014-002",
+    "source": "ISO/IEC 27014 Governance of Information Security",
+    "category": "ISO 27014 - Security Roles",
+    "requirement_text": "Security roles and responsibilities must be clearly defined: governing body, executive management, CISO, security steering committee, and operational security staff. The CISO must have sufficient authority, resources, and direct access to the governing body. Role conflicts must be identified and managed.",
+    "language": "en"
+  },
+  {
+    "id": "ISO-37301-001",
+    "source": "ISO 37301 Compliance Management Systems",
+    "category": "ISO 37301 - Compliance Management",
+    "requirement_text": "A compliance management system must be established covering compliance obligations, risk assessment, controls, monitoring, and continuous improvement. Top management must demonstrate leadership commitment. Compliance culture must be promoted. Compliance performance must be reported to the governing body.",
+    "language": "en"
+  },
+  {
+    "id": "ISO-37301-002",
+    "source": "ISO 37301 Compliance Management Systems",
+    "category": "ISO 37301 - Compliance Risk",
+    "requirement_text": "Compliance risks must be identified, assessed, and prioritized. A compliance risk register must be maintained and reviewed at least annually. Emerging compliance obligations must be identified through regulatory monitoring. Compliance risk treatment plans must be documented and tracked.",
+    "language": "en"
+  },
+  {
+    "id": "GRC-REG-001",
+    "source": "OECD Principles of Corporate Governance",
+    "category": "OECD - Board Oversight",
+    "requirement_text": "The board must exercise effective oversight of management, including IT and cybersecurity risk. Board members must have sufficient competence to assess technology risks. Independent directors must be present on the board. The board must establish specialized committees including audit and risk committees.",
+    "language": "en"
+  },
+  {
+    "id": "GRC-REG-002",
+    "source": "OECD Principles of Corporate Governance",
+    "category": "OECD - Disclosure & Transparency",
+    "requirement_text": "The organization must disclose material information including financial situation, performance, ownership, governance, and risk factors. Cybersecurity risk must be disclosed if material. Disclosure must be timely, accurate, and accessible. Materiality thresholds for cyber risk disclosure must be defined.",
+    "language": "en"
+  },
+  {
+    "id": "GRC-REG-003",
+    "source": "Sarbanes-Oxley Section 407 - Financial Expert",
+    "category": "SOX - Audit Committee",
+    "requirement_text": "The audit committee must consist entirely of independent directors and at least one member must be a financial expert. The audit committee must be directly responsible for the appointment, compensation, and oversight of the external auditor. The audit committee must establish procedures for whistleblower complaints.",
+    "language": "en"
+  },
+  {
+    "id": "GRC-REG-004",
+    "source": "SEC Regulation S-K Item 106 - Cybersecurity Disclosure",
+    "category": "SEC - Cyber Risk Disclosure",
+    "requirement_text": "Public companies must disclose material cybersecurity incidents within 4 business days of materiality determination. Annual reports must describe cybersecurity risk assessment, management, and governance processes. Board cybersecurity expertise must be disclosed. Cyber risk must be integrated into enterprise risk management.",
+    "language": "en"
+  },
+  {
+    "id": "GRC-REG-005",
+    "source": "EU Corporate Sustainability Reporting Directive (CSRD)",
+    "category": "CSRD - Risk Reporting",
+    "requirement_text": "Large organizations must report on sustainability risks including cybersecurity and data protection risks under the European Sustainability Reporting Standards (ESRS). Reports must be assured by a third party. Risk management processes and outcomes must be disclosed.",
+    "language": "en"
+  },
+  {
+    "id": "GRC-REG-006",
+    "source": "Basel Committee - Principles for Effective Risk Data Aggregation",
+    "category": "Basel - Risk Reporting Governance",
+    "requirement_text": "Risk data aggregation and reporting must be governed by board-approved policies. Reports must be accurate, complete, timely, and adaptable. Reporting must support risk management decisions under stress conditions. Data quality issues must be escalated to senior management and the board.",
+    "language": "en"
+  },
+  {
+    "id": "GRC-REG-007",
+    "source": "ISO 37001 Anti-Bribery Management Systems",
+    "category": "ISO 37001 - Anti-Bribery",
+    "requirement_text": "An anti-bribery management system must be established with policies, procedures, controls, and monitoring. Bribery risk must be assessed. Due diligence must be performed on associates, joint venture partners, and suppliers. Bribery incidents must be investigated and reported.",
+    "language": "en"
+  },
+  {
+    "id": "GRC-REG-008",
+    "source": "ISO 37002 Whistleblowing Management Systems",
+    "category": "ISO 37002 - Whistleblowing",
+    "requirement_text": "A whistleblowing management system must be established with confidential reporting channels, protection for whistleblowers, investigation procedures, and corrective action. Reports must be handled impartially. Whistleblower identity must be protected. Retaliation against whistleblowers is prohibited.",
+    "language": "en"
+  },
+  {
+    "id": "GRC-REG-009",
+    "source": "ISO 22301 Business Continuity Management Systems",
+    "category": "ISO 22301 - Business Continuity",
+    "requirement_text": "A business continuity management system must be established covering policy, planning, implementation, monitoring, and continuous improvement. Business impact analysis must identify critical functions and their dependencies. BCP must be tested at least annually. Recovery priorities must be based on business impact.",
+    "language": "en"
+  },
+  {
+    "id": "GRC-REG-010",
+    "source": "ISO 22301 Business Continuity Management Systems",
+    "category": "ISO 22301 - BIA & RTO",
+    "requirement_text": "Business Impact Analysis must define Recovery Time Objectives (RTO) and Recovery Point Objectives (RPO) for each critical business function. RTO and RPO must be validated through testing. Maximum tolerable downtime must be established. Dependencies between functions must be mapped.",
+    "language": "en"
+  },
+  {
+    "id": "GRC-REG-011",
+    "source": "ISO 22320 Emergency Management",
+    "category": "ISO 22320 - Incident Command",
+    "requirement_text": "Emergency management must establish incident command structure, roles, communication protocols, and coordination procedures. Incident commanders must be designated and trained. Emergency response must be coordinated with external agencies. After-action reviews must be conducted.",
+    "language": "en"
+  },
+  {
+    "id": "GRC-REG-012",
+    "source": "ENISA Guidelines for Cybersecurity Incident Management",
+    "category": "ENISA - Incident Management",
+    "requirement_text": "ENISA incident management guidelines must be followed for EU organizations: incident detection, analysis, containment, eradication, recovery, and post-incident analysis. Incident classification must follow ENISA severity scale. National CSIRT must be notified for significant incidents. Cross-border incidents must be coordinated.",
+    "language": "en"
+  },
+  {
+    "id": "GRC-REG-013",
+    "source": "ENISA Guidelines for Secure AI",
+    "category": "ENISA - Secure AI",
+    "requirement_text": "AI systems must be secured per ENISA guidelines: assess AI-specific threats (data poisoning, model evasion, model inversion), implement security controls throughout the ML lifecycle, secure the data pipeline, protect model integrity, and ensure observability. AI security assessment must be documented.",
+    "language": "en"
+  },
+  {
+    "id": "GRC-REG-014",
+    "source": "ENISA Threat Landscape",
+    "category": "ENISA - Threat Intelligence",
+    "requirement_text": "Organizations must maintain awareness of the ENISA Threat Landscape including top threats: ransomware, malware, phishing, insider threats, DDoS, supply chain attacks, and AI-related threats. Threat intelligence must inform security controls, monitoring, and incident response planning.",
+    "language": "en"
+  },
+  {
+    "id": "GRC-REG-015",
+    "source": "ISO 31010 Risk Assessment Techniques",
+    "category": "ISO 31010 - Risk Techniques",
+    "requirement_text": "Risk assessment techniques must be selected based on context, complexity, and available data. Techniques include brainstorming, structured what-if (SWIFT), FMEA, HAZOP, bow-tie analysis, Monte Carlo simulation, and Bayesian analysis. Technique selection must be documented and justified.",
+    "language": "en"
+  }
+]

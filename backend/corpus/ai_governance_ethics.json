@@ -1,0 +1,156 @@
+[
+  {
+    "id": "ISO-23894-001",
+    "source": "ISO/IEC 23894 AI Risk Management",
+    "category": "ISO 23894 - AI Risk Management",
+    "requirement_text": "An AI risk management framework must be established covering risk identification, analysis, evaluation, treatment, monitoring, and communication. AI risks must be assessed throughout the AI system lifecycle. Risk treatment must consider ethical, legal, social, and technical dimensions. Risk register must be maintained.",
+    "language": "en"
+  },
+  {
+    "id": "ISO-23894-002",
+    "source": "ISO/IEC 23894 AI Risk Management",
+    "category": "ISO 23894 - AI Risk Assessment",
+    "requirement_text": "AI risk assessment must identify risks from data (bias, quality, privacy), model (robustness, security, drift), deployment (misuse, unintended consequences), and governance (accountability, transparency). Assessment must consider both likelihood and severity. Results must inform risk treatment decisions.",
+    "language": "en"
+  },
+  {
+    "id": "ISO-42001-EXT-001",
+    "source": "ISO/IEC 42001 AI Management System - Extended",
+    "category": "ISO 42001 - AI Policy",
+    "requirement_text": "An AI policy must be established and approved by top management. The policy must include commitments to ethical AI, legal compliance, risk management, and continuous improvement. The policy must be communicated to all relevant parties and reviewed at planned intervals.",
+    "language": "en"
+  },
+  {
+    "id": "ISO-42001-EXT-002",
+    "source": "ISO/IEC 42001 AI Management System - Extended",
+    "category": "ISO 42001 - AI Impact Assessment",
+    "requirement_text": "An AI impact assessment must be conducted for each AI system before deployment, covering intended use, stakeholders, potential harms, benefits, fairness, transparency, and human oversight. Assessment results must be documented and approved by the AI management system owner. Re-assessment must occur upon significant changes.",
+    "language": "en"
+  },
+  {
+    "id": "ISO-42001-EXT-003",
+    "source": "ISO/IEC 42001 AI Management System - Extended",
+    "category": "ISO 42001 - AI System Lifecycle",
+    "requirement_text": "AI system lifecycle must be managed through design, development, validation, deployment, operation, monitoring, and decommissioning. Each phase must have documented procedures, roles, and quality gates. Data and model provenance must be maintained throughout the lifecycle.",
+    "language": "en"
+  },
+  {
+    "id": "AI-FAIR-001",
+    "source": "NIST AI RMF - Fairness & Bias",
+    "category": "AI Fairness - Bias Detection",
+    "requirement_text": "AI systems must be tested for bias across demographic groups (gender, race, age, nationality, disability). Fairness metrics (demographic parity, equalized odds, disparate impact) must be calculated and documented. Bias above defined thresholds must be mitigated through re-training, re-weighting, or post-processing.",
+    "language": "en"
+  },
+  {
+    "id": "AI-FAIR-002",
+    "source": "EU AI Act - Fairness Requirements",
+    "category": "AI Fairness - EU AI Act",
+    "requirement_text": "High-risk AI systems must be designed to minimize risks of bias and discrimination. Training, validation, and test data sets must be relevant, sufficiently representative, and free of errors. Where biases are detected, appropriate measures must be taken to correct them.",
+    "language": "en"
+  },
+  {
+    "id": "AI-EXP-001",
+    "source": "ISO/IEC 24028 AI Transparency & Explainability",
+    "category": "AI Explainability",
+    "requirement_text": "AI systems must provide transparency and explainability appropriate to their risk level. High-risk systems must provide interpretable decision rationale, feature importance, and confidence scores. Explainability methods (SHAP, LIME, attention visualization) must be documented. Users must be informed they are interacting with AI.",
+    "language": "en"
+  },
+  {
+    "id": "AI-EXP-002",
+    "source": "EU AI Act - Human Oversight",
+    "category": "AI - Human Oversight",
+    "requirement_text": "High-risk AI systems must be designed to allow human oversight. Oversight measures must include human-in-the-loop, human-over-the-loop, or human-on-the-loop approaches. Human operators must be able to understand system capabilities, interpret outputs, and override or stop the system.",
+    "language": "en"
+  },
+  {
+    "id": "AI-ROBUST-001",
+    "source": "ISO/IEC 24029 AI Robustness",
+    "category": "AI Robustness - Adversarial Testing",
+    "requirement_text": "AI systems must be tested for robustness against adversarial attacks, distribution shift, and edge cases. Adversarial testing must include perturbation analysis, FGSM/PGD attacks, and black-box transfer attacks. Robustness must be measured and documented. Minimum robustness thresholds must be defined.",
+    "language": "en"
+  },
+  {
+    "id": "AI-ROBUST-002",
+    "source": "ISO/IEC 24029 AI Robustness",
+    "category": "AI Robustness - Model Drift",
+    "requirement_text": "AI model drift must be monitored continuously. Data drift (input distribution changes) and concept drift (input-output relationship changes) must be detected through statistical tests (PSI, KL divergence, KS test). Drift above thresholds must trigger model re-training or replacement.",
+    "language": "en"
+  },
+  {
+    "id": "AI-MON-001",
+    "source": "AI Monitoring Best Practices",
+    "category": "AI Monitoring - Production Monitoring",
+    "requirement_text": "Production AI systems must be monitored for performance, fairness, security, and operational metrics. Monitoring must include prediction accuracy, latency, throughput, error rates, bias metrics, and adversarial input detection. Anomalies must trigger alerts with defined escalation procedures.",
+    "language": "en"
+  },
+  {
+    "id": "AI-MON-002",
+    "source": "AI Monitoring Best Practices",
+    "category": "AI Monitoring - Feedback Loop",
+    "requirement_text": "AI system feedback loops must be established to collect user feedback, measure outcomes, and improve model performance. Feedback must be used to validate model predictions, identify edge cases, and inform re-training. Feedback data must be protected from manipulation.",
+    "language": "en"
+  },
+  {
+    "id": "AI-RED-001",
+    "source": "AI Red Teaming Best Practices",
+    "category": "AI Red Teaming - Pre-Deployment",
+    "requirement_text": "AI red teaming must be conducted before deploying high-risk AI systems. Red team must test for prompt injection, jailbreaking, data exfiltration, bias exploitation, and safety bypass. Findings must be remediated before deployment. Red team exercises must be repeated at least annually.",
+    "language": "en"
+  },
+  {
+    "id": "AI-RED-002",
+    "source": "AI Red Teaming Best Practices",
+    "category": "AI Red Teaming - Continuous Testing",
+    "requirement_text": "Continuous AI red teaming must be conducted in production through automated adversarial testing, A/B testing of safety measures, and user-reported issue tracking. Red team results must feed into the AI risk register and drive model updates. Critical safety failures must trigger immediate model rollback.",
+    "language": "en"
+  },
+  {
+    "id": "AI-INC-001",
+    "source": "AI Incident Response Best Practices",
+    "category": "AI Incident Response",
+    "requirement_text": "An AI incident response plan must be established covering model failure, adversarial attack, bias discovery, privacy breach, and safety incident. The plan must include detection, containment, investigation, remediation, and notification. AI incidents must be documented in an AI incident database with lessons learned.",
+    "language": "en"
+  },
+  {
+    "id": "AI-INC-002",
+    "source": "EU AI Act - Serious Incident Reporting",
+    "category": "AI Incident - EU AI Act Reporting",
+    "requirement_text": "Providers of high-risk AI systems must report serious incidents and malfunctions to the relevant national competent authority without undue delay and no later than 15 days after becoming aware. Reports must include circumstances, consequences, and corrective actions taken.",
+    "language": "en"
+  },
+  {
+    "id": "AI-SUPPLY-001",
+    "source": "AI Supply Chain Security",
+    "category": "AI Supply Chain - Model Provenance",
+    "requirement_text": "AI model provenance must be documented including training data sources, data licensing, model architecture, training infrastructure, and evaluation results. Third-party models must be vetted for security, bias, and licensing terms. Model cards must be maintained and updated. SBOM for AI components must be generated.",
+    "language": "en"
+  },
+  {
+    "id": "AI-SUPPLY-002",
+    "source": "AI Supply Chain Security",
+    "category": "AI Supply Chain - Data Provenance",
+    "requirement_text": "Training data provenance must be documented including source, collection method, consent status, quality metrics, and known biases. Data must be verified for integrity and authenticity. Data lineage must be maintained from source through preprocessing to model training. Poisoned data must be detected and removed.",
+    "language": "en"
+  },
+  {
+    "id": "AI-ETHICS-001",
+    "source": "UNESCO Recommendation on the Ethics of AI",
+    "category": "AI Ethics - Principles",
+    "requirement_text": "AI systems must adhere to ethical principles: human rights, diversity, environment, human determination, fairness, sustainability, privacy, accountability, transparency, and safety. Ethical impact assessments must be conducted. AI must not be used for social scoring or mass surveillance.",
+    "language": "en"
+  },
+  {
+    "id": "AI-ETHICS-002",
+    "source": "OECD AI Principles",
+    "category": "AI Ethics - OECD Principles",
+    "requirement_text": "AI must be designed to respect human-centered values, transparency, robustness, and accountability. AI must drive inclusive growth, sustainable development, and well-being. Organizations must implement responsible AI governance. AI-related risks must be managed throughout the system lifecycle.",
+    "language": "en"
+  },
+  {
+    "id": "AI-ETHICS-003",
+    "source": "Partnership on AI (PAI) Tenets",
+    "category": "AI Ethics - PAI Tenets",
+    "requirement_text": "AI must be developed with safety as a priority, fairness and inclusivity, transparency and explainability, accountability, human collaboration, and beneficial social impact. AI systems must be subject to human oversight. Stakeholder engagement must inform AI development and deployment decisions.",
+    "language": "en"
+  }
+]

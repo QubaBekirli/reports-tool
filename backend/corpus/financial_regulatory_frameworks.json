@@ -1,0 +1,149 @@
+[
+  {
+    "id": "BASEL-OPS-001",
+    "source": "Basel Committee on Banking Supervision - Operational Resilience",
+    "category": "Basel - Operational Resilience",
+    "requirement_text": "Banks must identify critical business services, set impact tolerances for severe disruption, map dependencies (people, technology, facilities, third parties), and test resilience against severe-but-plausible scenarios. Boards and senior management must oversee operational resilience. Findings must drive remediation.",
+    "language": "en"
+  },
+  {
+    "id": "BASEL-OPS-002",
+    "source": "Basel Committee on Banking Supervision - Operational Risk",
+    "category": "Basel - Operational Risk Management",
+    "requirement_text": "Operational risk must be managed through identification, assessment, monitoring, and control/mitigation. A risk control self-assessment (RCSA) must be maintained. Key Risk Indicators (KRIs) must be tracked. Operational risk events must be recorded in a loss event database and analyzed for trends.",
+    "language": "en"
+  },
+  {
+    "id": "EBA-OPS-001",
+    "source": "EBA Guidelines on Outsourcing Arrangements",
+    "category": "EBA - Outsourcing Governance",
+    "requirement_text": "Institutions must establish an outsourcing governance framework with board approval, documented outsourcing policy, and a central register of all outsourcing arrangements. Critical or important functions must be subject to enhanced due diligence, documented risk analysis, and contractual right-to-audit.",
+    "language": "en"
+  },
+  {
+    "id": "EBA-OPS-002",
+    "source": "EBA Guidelines on Outsourcing Arrangements",
+    "category": "EBA - Cloud Outsourcing",
+    "requirement_text": "Cloud outsourcing arrangements must include exit strategies, data portability, concentration risk assessment, sub-outsourcing controls, and business continuity provisions. Institutions must ensure they can exit cloud arrangements without disruption. Cloud provider lock-in risk must be assessed and mitigated.",
+    "language": "en"
+  },
+  {
+    "id": "FFIEC-ARCH-001",
+    "source": "FFIEC Architecture, Infrastructure & Operations Booklet",
+    "category": "FFIEC - IT Architecture",
+    "requirement_text": "IT architecture must support business strategy, resilience, and security. Architecture must include documented standards, technology lifecycle management, capacity planning, and integration management. Architecture review board must oversee changes. Technical debt must be tracked and managed.",
+    "language": "en"
+  },
+  {
+    "id": "FFIEC-ARCH-002",
+    "source": "FFIEC Operations Booklet",
+    "category": "FFIEC - IT Operations",
+    "requirement_text": "IT operations must include documented procedures, job scheduling, batch processing controls, help desk operations, problem management, and capacity monitoring. Operational events must be logged. Configuration items must be tracked in a CMDB. Production changes must follow change management.",
+    "language": "en"
+  },
+  {
+    "id": "MAS-001",
+    "source": "MAS Technology Risk Management Guidelines (Singapore)",
+    "category": "MAS - Technology Risk Management",
+    "requirement_text": "Financial institutions must establish a technology risk management framework with board oversight, risk assessments, control implementation, and monitoring. Annual TRM self-assessment must be conducted. IT system roles and responsibilities must be segregated. System availability and recoverability must be tested.",
+    "language": "en"
+  },
+  {
+    "id": "MAS-002",
+    "source": "MAS Notice on Cyber Hygiene",
+    "category": "MAS - Cyber Hygiene",
+    "requirement_text": "Financial institutions must implement cyber hygiene measures: secure configuration of systems, security patching within 14 days for critical, restriction of admin access, endpoint protection, and secure remote access. Annual cyber hygiene assessment must be performed. Board must be informed of cyber risks.",
+    "language": "en"
+  },
+  {
+    "id": "HKMA-001",
+    "source": "HKMA Cybersecurity Fortification Initiative (CFI)",
+    "category": "HKMA - Cyber Resilience",
+    "requirement_text": "Banks must implement the Cyber Resilience Assessment Framework (C-RAF): conduct self-assessment against inherent risk level, establish cyber resilience plans, and undergo independent assessment. Intelligence-led cyber attack testing (iCAT) must be conducted for high-inherent-risk institutions.",
+    "language": "en"
+  },
+  {
+    "id": "NYDFS-001",
+    "source": "NYDFS 23 NYCRR 500 Cybersecurity Regulation",
+    "category": "NYDFS - Cybersecurity Program",
+    "requirement_text": "Covered entities must maintain a cybersecurity program designed to protect consumer data, ensure availability of systems, and detect, respond, and recover from cyber events. The program must be based on risk assessment and reviewed annually. A qualified CISO must be designated.",
+    "language": "en"
+  },
+  {
+    "id": "NYDFS-002",
+    "source": "NYDFS 23 NYCRR 500 Cybersecurity Regulation",
+    "category": "NYDFS - Incident Reporting",
+    "requirement_text": "Cybersecurity events must be reported to the Superintendent within 72 hours of determination that a qualifying event has occurred. Events affecting 5,000+ New York consumers, involving unauthorized access to privileged accounts, or causing material harm must be reported.",
+    "language": "en"
+  },
+  {
+    "id": "GLBA-001",
+    "source": "Gramm-Leach-Bliley Act (GLBA) Safeguards Rule",
+    "category": "GLBA - Safeguards Rule",
+    "requirement_text": "Financial institutions must develop, implement, and maintain a comprehensive information security program with administrative, technical, and physical safeguards. The program must include risk assessment, board oversight, employee training, vendor oversight, and incident response. Annual report to the board is required.",
+    "language": "en"
+  },
+  {
+    "id": "GLBA-002",
+    "source": "Gramm-Leach-Bliley Act (GLBA) Privacy Rule",
+    "category": "GLBA - Privacy Rule",
+    "requirement_text": "Financial institutions must provide privacy notices to customers describing information sharing policies, opt-out mechanisms for non-affiliated sharing, and safeguards for customer information. Notices must be delivered at account opening and annually. Reuse and redisclosure of NPI must be restricted.",
+    "language": "en"
+  },
+  {
+    "id": "SOX-404-IT-001",
+    "source": "PCAOB AS 2201 - Audit of ICFR",
+    "category": "SOX - IT Application Controls",
+    "requirement_text": "IT application controls supporting financial reporting must be tested for design and operating effectiveness. Controls must include input validation, processing integrity, interface controls, automated reconciliations, and access restrictions. Automated controls must be tested at least once per year.",
+    "language": "en"
+  },
+  {
+    "id": "SOX-404-IT-002",
+    "source": "PCAOB AS 2201 - Audit of ICFR",
+    "category": "SOX - IT Interface Controls",
+    "requirement_text": "IT interface controls between financial reporting systems must ensure complete, accurate, and timely data transfer. Interface controls must include record count reconciliation, control totals, error logging, and exception handling. Interfaces must be tested for both volume and error scenarios.",
+    "language": "en"
+  },
+  {
+    "id": "SOX-404-IT-003",
+    "source": "PCAOB AS 2201 - Audit of ICFR",
+    "category": "SOX - End-User Computing (EUC) Controls",
+    "requirement_text": "End-user computing applications (spreadsheets, Access databases, BI tools) used in financial reporting must be inventoried and controlled. Controls must include version control, access restrictions, input validation, formula integrity testing, change documentation, and periodic recertification.",
+    "language": "en"
+  },
+  {
+    "id": "PCI-4-001",
+    "source": "PCI DSS v4.0",
+    "category": "PCI DSS - Requirement 1 (Network Security)",
+    "requirement_text": "Firewall and router configurations must restrict connections between untrusted networks and CDE. Default configurations must be changed. Firewall rules must be reviewed at least every 6 months. Network segmentation must be implemented and tested. Wireless networks must be segregated from the CDE.",
+    "language": "en"
+  },
+  {
+    "id": "PCI-4-002",
+    "source": "PCI DSS v4.0",
+    "category": "PCI DSS - Requirement 3 (Cardholder Data Protection)",
+    "requirement_text": "Stored account data must be minimized and protected. Sensitive Authentication Data (SAD) must not be stored after authorization. PAN must be rendered unreadable through encryption, tokenization, hashing, or truncation. Cryptographic key management must follow strong key management practices.",
+    "language": "en"
+  },
+  {
+    "id": "PCI-4-003",
+    "source": "PCI DSS v4.0",
+    "category": "PCI DSS - Requirement 8 (Identity & Access)",
+    "requirement_text": "All users must be assigned unique IDs. Authentication must include MFA for all access to the CDE. Passwords must meet minimum complexity. Accounts must be locked after repeated failed attempts. User access reviews must be performed at least every 6 months.",
+    "language": "en"
+  },
+  {
+    "id": "PCI-4-004",
+    "source": "PCI DSS v4.0",
+    "category": "PCI DSS - Requirement 10 (Logging & Monitoring)",
+    "requirement_text": "Audit trails must be enabled and synchronized to a central log server for all system components in the CDE. Logs must include all user access, administrative actions, and security-relevant events. Logs must be retained for at least 1 year with 3 months online. Daily log review must be automated.",
+    "language": "en"
+  },
+  {
+    "id": "PCI-4-005",
+    "source": "PCI DSS v4.0",
+    "category": "PCI DSS - Requirement 11 (Security Testing)",
+    "requirement_text": "Wireless rogue AP detection must be performed quarterly. Internal and external vulnerability scans must be performed at least quarterly (external by ASV). Annual penetration testing must cover CDE and segmentation. File Integrity Monitoring (FIM) must alert on unauthorized file changes.",
+    "language": "en"
+  }
+]

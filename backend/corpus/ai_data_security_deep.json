@@ -1,0 +1,177 @@
+[
+  {
+    "id": "OWASP-LLM-EXT-001",
+    "source": "OWASP Top 10 for LLM Applications (2025)",
+    "category": "OWASP LLM - LLM01 Prompt Injection",
+    "requirement_text": "Prompt injection defenses must include input sanitization, system prompt isolation, allow-listing of permitted instructions, and output validation. Indirect prompt injection via retrieved documents must be mitigated through context separation and sandboxed tool execution. Jailbreak attempts must be logged.",
+    "language": "en"
+  },
+  {
+    "id": "OWASP-LLM-EXT-002",
+    "source": "OWASP Top 10 for LLM Applications (2025)",
+    "category": "OWASP LLM - LLM02 Sensitive Information Disclosure",
+    "requirement_text": "LLM systems must prevent disclosure of sensitive information including training data, system prompts, PII, and credentials. Output filters must detect and redact sensitive content. Training data must be scrubbed of PII. System prompts must not contain secrets. Secrets must be stored in a vault.",
+    "language": "en"
+  },
+  {
+    "id": "OWASP-LLM-EXT-003",
+    "source": "OWASP Top 10 for LLM Applications (2025)",
+    "category": "OWASP LLM - LLM03 Supply Chain",
+    "requirement_text": "LLM supply chain risks must be managed through model provenance verification, third-party model and dataset vetting, SBOM for ML components, and plugin/extension security review. Pre-trained models from untrusted sources must be scanned for backdoors and data poisoning before use.",
+    "language": "en"
+  },
+  {
+    "id": "OWASP-LLM-EXT-004",
+    "source": "OWASP Top 10 for LLM Applications (2025)",
+    "category": "OWASP LLM - LLM04 Data Poisoning",
+    "requirement_text": "Data poisoning defenses must include training data integrity verification, anomaly detection in training datasets, data source attestation, and differential testing. Fine-tuning data must be reviewed for malicious content. Model behavior must be tested against known poisoning attack patterns.",
+    "language": "en"
+  },
+  {
+    "id": "OWASP-LLM-EXT-005",
+    "source": "OWASP Top 10 for LLM Applications (2025)",
+    "category": "OWASP LLM - LLM05 Improper Output Handling",
+    "requirement_text": "LLM outputs must be treated as untrusted and validated before being passed to downstream systems. Output must be sanitized to prevent XSS, SQL injection, command injection, and SSRF when used in execution contexts. Output length and format must be constrained.",
+    "language": "en"
+  },
+  {
+    "id": "OWASP-LLM-EXT-006",
+    "source": "OWASP Top 10 for LLM Applications (2025)",
+    "category": "OWASP LLM - LLM06 Excessive Agency",
+    "requirement_text": "LLM systems must limit the actions an LLM can perform. Tool use must be restricted to necessary functions with least-privilege. Destructive or irreversible actions (deleting data, sending payments) must require human confirmation. Rate limiting must prevent autonomous runaway actions.",
+    "language": "en"
+  },
+  {
+    "id": "OWASP-LLM-EXT-007",
+    "source": "OWASP Top 10 for LLM Applications (2025)",
+    "category": "OWASP LLM - LLM07 System Prompt Leakage",
+    "requirement_text": "System prompts must not contain sensitive information or proprietary logic. System prompt extraction attacks must be detected and blocked. Prompt templates must be stored securely and not exposed to end users. Rate limiting and input filtering must reduce extraction attack feasibility.",
+    "language": "en"
+  },
+  {
+    "id": "OWASP-LLM-EXT-008",
+    "source": "OWASP Top 10 for LLM Applications (2025)",
+    "category": "OWASP LLM - LLM08 Vector & Embedding Weaknesses",
+    "requirement_text": "Vector databases must be secured with access controls, encryption, and input validation. Embedding models must be protected against model theft and inversion attacks. RAG retrieval must validate source documents to prevent indirect injection through poisoned knowledge base content.",
+    "language": "en"
+  },
+  {
+    "id": "OWASP-LLM-EXT-009",
+    "source": "OWASP Top 10 for LLM Applications (2025)",
+    "category": "OWASP LLM - LLM09 Misinformation",
+    "requirement_text": "LLM systems must mitigate misinformation and hallucination through grounding (RAG with verified sources), output fact-checking, confidence scoring, and human review for high-stakes outputs. Users must be informed that AI-generated content may be inaccurate. Hallucination rates must be monitored.",
+    "language": "en"
+  },
+  {
+    "id": "OWASP-LLM-EXT-010",
+    "source": "OWASP Top 10 for LLM Applications (2025)",
+    "category": "OWASP LLM - LLM10 Unbounded Consumption",
+    "requirement_text": "LLM systems must implement rate limiting, resource quotas, and cost controls to prevent resource exhaustion and financial abuse. Token limits, concurrent request limits, and API key rotation must be enforced. Model inference costs must be monitored with alerts for anomalous usage patterns.",
+    "language": "en"
+  },
+  {
+    "id": "NIST-AI-RMF-EXT-001",
+    "source": "NIST AI RMF 1.0 - Extended",
+    "category": "NIST AI RMF - Govern (Extended)",
+    "requirement_text": "AI governance must establish a culture of risk management with defined roles, responsibilities, and accountability. An AI risk management officer or committee must be designated. AI policies must cover acceptable use, development standards, deployment criteria, and decommissioning. Board-level oversight must be established.",
+    "language": "en"
+  },
+  {
+    "id": "NIST-AI-RMF-EXT-002",
+    "source": "NIST AI RMF 1.0 - Extended",
+    "category": "NIST AI RMF - Map (Extended)",
+    "requirement_text": "AI risk mapping must identify context, use cases, stakeholders, and potential impacts. AI system inventory must be maintained including purpose, data sources, model type, deployment environment, and risk tier. Third-party AI components must be mapped and assessed.",
+    "language": "en"
+  },
+  {
+    "id": "NIST-AI-RMF-EXT-003",
+    "source": "NIST AI RMF 1.0 - Extended",
+    "category": "NIST AI RMF - Measure (Extended)",
+    "requirement_text": "AI risk measurement must include quantitative and qualitative evaluation of reliability, validity, safety, security, accountability, transparency, explainability, privacy, and bias. Pre-deployment and post-deployment testing must be conducted. Benchmark results must be documented in model cards.",
+    "language": "en"
+  },
+  {
+    "id": "NIST-AI-RMF-EXT-004",
+    "source": "NIST AI RMF 1.0 - Extended",
+    "category": "NIST AI RMF - Manage (Extended)",
+    "requirement_text": "AI risk management must allocate resources to address identified risks, implement mitigation controls, establish monitoring, and respond to incidents. Risk responses must be proportional to AI system risk tier. Continuous monitoring must detect model drift, performance degradation, and emerging risks.",
+    "language": "en"
+  },
+  {
+    "id": "AI-SEC-EXT-001",
+    "source": "MITRE ATLAS (Adversarial Threat Landscape for AI Systems)",
+    "category": "MITRE ATLAS - Reconnaissance",
+    "requirement_text": "AI systems must be defended against adversarial reconnaissance including model discovery, data collection, and infrastructure enumeration. Model endpoints must not expose metadata or version information publicly. API discovery must be restricted. Training data sources must be protected from scraping.",
+    "language": "en"
+  },
+  {
+    "id": "AI-SEC-EXT-002",
+    "source": "MITRE ATLAS (Adversarial Threat Landscape for AI Systems)",
+    "category": "MITRE ATLAS - Model Evasion",
+    "requirement_text": "Model evasion attacks must be mitigated through adversarial training, input anomaly detection, ensemble methods, and output confidence thresholding. Evasion attack resilience must be tested using perturbation analysis and adversarial example generation. Detection rate under attack must be monitored.",
+    "language": "en"
+  },
+  {
+    "id": "AI-SEC-EXT-003",
+    "source": "MITRE ATLAS (Adversarial Threat Landscape for AI Systems)",
+    "category": "MITRE ATLAS - Model Extraction",
+    "requirement_text": "Model extraction (stealing) defenses must include API rate limiting, query pattern analysis, output perturbation, and watermarking. Model access must require authentication. High-volume query patterns indicative of extraction attempts must be detected and blocked. Model theft incidents must be logged.",
+    "language": "en"
+  },
+  {
+    "id": "AI-SEC-EXT-004",
+    "source": "MITRE ATLAS (Adversarial Threat Landscape for AI Systems)",
+    "category": "MITRE ATLAS - Model Inversion",
+    "requirement_text": "Model inversion attacks must be mitigated through differential privacy in training, output minimization, and access controls. Inversion attack resilience must be tested by attempting to reconstruct training data from model outputs. Sensitive training data exposure through inversion must be measured.",
+    "language": "en"
+  },
+  {
+    "id": "AI-SEC-EXT-005",
+    "source": "NIST AI 600-1 Generative AI Profile",
+    "category": "NIST GenAI - Content Provenance",
+    "requirement_text": "Generative AI content provenance must be established through watermarking, cryptographic signatures, or metadata tagging. AI-generated content must be distinguishable from human-created content. Provenance information must be preserved through downstream use. Content authenticity verification tools must be available.",
+    "language": "en"
+  },
+  {
+    "id": "AI-SEC-EXT-006",
+    "source": "NIST AI 600-1 Generative AI Profile",
+    "category": "NIST GenAI - Dangerous Content",
+    "requirement_text": "Generative AI systems must prevent generation of dangerous content including weapons instructions, self-harm guidance, malicious code, and disinformation. Content filters must be layered (input, model, output). Red teaming for dangerous content must be conducted before deployment and periodically after.",
+    "language": "en"
+  },
+  {
+    "id": "DATA-SEC-EXT-001",
+    "source": "NIST SP 800-88 Media Sanitization",
+    "category": "Data - Media Sanitization",
+    "requirement_text": "Media sanitization must be performed per NIST SP 800-88 guidelines before media reuse or disposal. Sanitization methods (Clear, Purge, Destroy) must be selected based on media type and data sensitivity. Sanitization must be verified and documented. Certificates of destruction must be retained.",
+    "language": "en"
+  },
+  {
+    "id": "DATA-SEC-EXT-002",
+    "source": "ISO/IEC 27040 Storage Security",
+    "category": "Data - Storage Security",
+    "requirement_text": "Storage security must protect data at rest through encryption, access controls, integrity protection, and secure key management. Storage arrays must be configured with secure defaults. Storage replication must use encrypted channels. Snapshots and backups must be encrypted and access-controlled.",
+    "language": "en"
+  },
+  {
+    "id": "DATA-SEC-EXT-003",
+    "source": "ISO/IEC 27040 Storage Security",
+    "category": "Data - Data Masking",
+    "requirement_text": "Non-production environments must use masked or synthetic data, not real production data. Masking must preserve referential integrity and data format while obscuring sensitive values. Masking rules must be documented and tested. Production data in test environments must be identified and removed.",
+    "language": "en"
+  },
+  {
+    "id": "DATA-SEC-EXT-004",
+    "source": "Data Security Best Practices",
+    "category": "Data - Data Catalog & Lineage",
+    "requirement_text": "A data catalog must be maintained inventorying all data assets with ownership, classification, sensitivity, location, and lineage. Data lineage must trace data from source through transformation to consumption. Lineage must be automated where possible. Sensitive data flows must be mapped and reviewed.",
+    "language": "en"
+  },
+  {
+    "id": "DATA-SEC-EXT-005",
+    "source": "Data Security Best Practices",
+    "category": "Data - Privacy Enhancing Technologies",
+    "requirement_text": "Privacy Enhancing Technologies (PETs) must be evaluated and deployed where appropriate: differential privacy, homomorphic encryption, secure multi-party computation, and federated learning. PET adoption must be risk-based. Privacy-utility tradeoffs must be documented and approved by the DPO.",
+    "language": "en"
+  }
+]

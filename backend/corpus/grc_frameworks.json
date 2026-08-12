@@ -1,0 +1,142 @@
+[
+  {
+    "id": "ISO-27001-2022-001",
+    "source": "ISO/IEC 27001:2022 ISMS Requirements",
+    "category": "ISO 27001 - ISMS Context",
+    "requirement_text": "The organization must determine internal and external issues relevant to the ISMS, the needs of interested parties, and the scope of the ISMS. The ISMS scope must be documented and available as documented information. Top management must demonstrate leadership and commitment.",
+    "language": "en"
+  },
+  {
+    "id": "ISO-27001-2022-002",
+    "source": "ISO/IEC 27001:2022 ISMS Requirements",
+    "category": "ISO 27001 - Risk Treatment",
+    "requirement_text": "A risk treatment plan must be created selecting controls from Annex A. The Statement of Applicability (SoA) must document which Annex A controls are applicable, justified, and implemented. Risk treatment decisions must be approved by risk owners and reviewed by top management.",
+    "language": "en"
+  },
+  {
+    "id": "ISO-27001-2022-003",
+    "source": "ISO/IEC 27001:2022 ISMS Requirements",
+    "category": "ISO 27001 - Management Review",
+    "requirement_text": "Top management must review the ISMS at planned intervals (at least annually) to ensure its continuing suitability, adequacy, and effectiveness. Review inputs must include audit results, risk status, corrective actions, previous review outputs, changes in external/internal issues, and opportunities for improvement.",
+    "language": "en"
+  },
+  {
+    "id": "ISO-27001-2022-004",
+    "source": "ISO/IEC 27001:2022 ISMS Requirements",
+    "category": "ISO 27001 - Internal Audit",
+    "requirement_text": "Internal ISMS audits must be conducted at planned intervals to provide information on whether the ISMS conforms to the standard and is effectively implemented. Auditors must be independent of the area being audited. Audit results must be reported to management and corrective actions tracked.",
+    "language": "en"
+  },
+  {
+    "id": "ISO-27002-2022-001",
+    "source": "ISO/IEC 27002:2022 Security Controls",
+    "category": "ISO 27002 - Organizational Controls",
+    "requirement_text": "Organizational controls must include information security policies, roles and responsibilities, segregation of duties, contact with authorities, threat intelligence, and information security incident management planning. Policies must be approved by management and communicated to all employees.",
+    "language": "en"
+  },
+  {
+    "id": "ISO-27002-2022-002",
+    "source": "ISO/IEC 27002:2022 Security Controls",
+    "category": "ISO 27002 - People Controls",
+    "requirement_text": "People controls must include confidentiality agreements, security screening of personnel, terms and conditions of employment, information security awareness education and training, disciplinary process, and remote working security arrangements.",
+    "language": "en"
+  },
+  {
+    "id": "ISO-27002-2022-003",
+    "source": "ISO/IEC 27002:2022 Security Controls",
+    "category": "ISO 27002 - Physical Controls",
+    "requirement_text": "Physical controls must include secure areas (perimeter, entry points, monitoring), equipment security (siting, protection, maintenance, disposal), and physical threat protection (fire, water, power). Clear desk and clear screen policies must be enforced.",
+    "language": "en"
+  },
+  {
+    "id": "ISO-27002-2022-004",
+    "source": "ISO/IEC 27002:2022 Security Controls",
+    "category": "ISO 27002 - Technological Controls",
+    "requirement_text": "Technological controls must include access control, cryptography, secure development, supplier relationships, system acquisition, ICT readiness for business continuity, and technical vulnerability management. Controls must be implemented consistently across all systems.",
+    "language": "en"
+  },
+  {
+    "id": "COBIT-2019-001",
+    "source": "COBIT 2019 Governance Framework",
+    "category": "COBIT - Evaluate Direct Monitor (EDM)",
+    "requirement_text": "The EDM domain must ensure the board and executive management evaluate stakeholder needs, direct IT strategy and risk, and monitor performance and compliance. EDM01 (Ensured Benefits Optimization), EDM02 (Ensured Risk Optimization), EDM03 (Ensured Resource Optimization), EDM04 (Ensured Stakeholder Transparency) must be implemented.",
+    "language": "en"
+  },
+  {
+    "id": "COBIT-2019-002",
+    "source": "COBIT 2019 Governance Framework",
+    "category": "COBIT - Align Plan Organize (APO)",
+    "requirement_text": "The APO domain must align IT with enterprise strategy through APO01 (Managed I&T Management Framework), APO02 (Managed Strategy), APO03 (Managed Enterprise Architecture), APO04 (Managed Innovation), APO09 (Managed Portfolio), APO10 (Managed Suppliers), APO12 (Managed Risk), APO13 (Managed Security).",
+    "language": "en"
+  },
+  {
+    "id": "COBIT-2019-003",
+    "source": "COBIT 2019 Governance Framework",
+    "category": "COBIT - Build Acquire Implement (BAI)",
+    "requirement_text": "The BAI domain must manage IT implementation through BAI01 (Managed Programs and Projects), BAI02 (Managed Requirements Definition), BAI03 (Managed Solutions Identification), BAI04 (Managed Availability and Capacity), BAI06 (Managed Changes), BAI07 (Managed Changes Acceptance), BAI08 (Managed Knowledge).",
+    "language": "en"
+  },
+  {
+    "id": "COBIT-2019-004",
+    "source": "COBIT 2019 Governance Framework",
+    "category": "COBIT - Deliver Service Support (DSS)",
+    "requirement_text": "The DSS domain must manage IT operations through DSS01 (Managed Operations), DSS02 (Managed Service Requests and Incidents), DSS03 (Managed Problems), DSS04 (Managed Continuity), DSS05 (Managed Security Services), DSS06 (Managed Business Process Controls).",
+    "language": "en"
+  },
+  {
+    "id": "COBIT-2019-005",
+    "source": "COBIT 2019 Governance Framework",
+    "category": "COBIT - Monitor Evaluate Assess (MEA)",
+    "requirement_text": "The MEA domain must monitor and evaluate IT performance through MEA01 (Managed Performance and Conformance Monitoring), MEA02 (Managed System of Internal Control), MEA03 (Managed Compliance with External Requirements). Monitoring results must be reported to the board.",
+    "language": "en"
+  },
+  {
+    "id": "COSO-ERM-001",
+    "source": "COSO ERM 2017 Enterprise Risk Management",
+    "category": "COSO ERM - Governance & Culture",
+    "requirement_text": "ERM governance and culture must include board oversight, operating structures, risk culture, risk appetite formulation, and talent attraction and retention. The board must actively oversee ERM and ensure risk-aware culture is promoted throughout the organization.",
+    "language": "en"
+  },
+  {
+    "id": "COSO-ERM-002",
+    "source": "COSO ERM 2017 Enterprise Risk Management",
+    "category": "COSO ERM - Strategy & Objective-Setting",
+    "requirement_text": "ERM must align with strategy by considering risk in strategy selection, formulating risk appetite, and establishing aligned business objectives. Risk considerations must inform strategic planning, and objectives must be SMART (Specific, Measurable, Achievable, Relevant, Time-bound).",
+    "language": "en"
+  },
+  {
+    "id": "COSO-ERM-003",
+    "source": "COSO ERM 2017 Enterprise Risk Management",
+    "category": "COSO ERM - Performance",
+    "requirement_text": "ERM performance must identify, assess, prioritize, and respond to risk. Severity and likelihood must be evaluated. Portfolio view of risk must be maintained. Risk responses must be selected (accept, avoid, reduce, share) and implemented with appropriate controls.",
+    "language": "en"
+  },
+  {
+    "id": "COSO-ERM-004",
+    "source": "COSO ERM 2017 Enterprise Risk Management",
+    "category": "COSO ERM - Review & Revision",
+    "requirement_text": "ERM must include assessing substantial change, reviewing risk and performance, and pursuing improvement. Risk assessments must be updated when significant internal or external changes occur. ERM processes must be continuously improved based on lessons learned.",
+    "language": "en"
+  },
+  {
+    "id": "COSO-ERM-005",
+    "source": "COSO ERM 2017 Enterprise Risk Management",
+    "category": "COSO ERM - Information Communication & Reporting",
+    "requirement_text": "ERM must leverage information systems, communicate risk information, and report on risk, culture, and performance. Risk reporting must be timely, relevant, and actionable. Board-level risk reporting must include portfolio view, emerging risks, and key risk indicators.",
+    "language": "en"
+  },
+  {
+    "id": "GRC-FW-001",
+    "source": "OCEG GRC Capability Model (Red Book) 3.5",
+    "category": "OCEG GRC - Context",
+    "requirement_text": "GRC context must be established by understanding the organization's culture, stakeholders, external environment, regulatory landscape, and risk profile. GRC capability must be designed to align with the organization's business model, strategy, and operational realities.",
+    "language": "en"
+  },
+  {
+    "id": "GRC-FW-002",
+    "source": "OCEG GRC Capability Model (Red Book) 3.5",
+    "category": "OCEG GRC - Monitor & Evaluate",
+    "requirement_text": "GRC performance must be monitored and evaluated continuously. Monitoring must track control effectiveness, compliance status, risk indicators, and objective achievement. Evaluation must identify gaps, root causes, and improvement opportunities. Results must drive corrective and preventive actions.",
+    "language": "en"
+  }
+]

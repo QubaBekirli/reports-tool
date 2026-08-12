@@ -1,0 +1,149 @@
+[
+  {
+    "id": "APRA-CPS-234-001",
+    "source": "APRA CPS 234 Information Security (Australia)",
+    "category": "APRA - Information Security Governance",
+    "requirement_text": "Regulated entities must maintain an information security framework approved by the board. The board must actively oversee information security and ensure the entity maintains capabilities commensurate with information security vulnerabilities and threats. The framework must be reviewed at least annually.",
+    "language": "en"
+  },
+  {
+    "id": "APRA-CPS-234-002",
+    "source": "APRA CPS 234 Information Security (Australia)",
+    "category": "APRA - Incident Notification",
+    "requirement_text": "Information security incidents must be notified to APRA within 72 hours of the entity becoming aware of the incident. Notifications must include nature, impact, and remediation actions. Material incidents affecting member/beneficiary interests must be reported immediately.",
+    "language": "en"
+  },
+  {
+    "id": "APRA-CPS-230-001",
+    "source": "APRA CPS 230 Operational Risk Management (Australia)",
+    "category": "APRA - Operational Risk",
+    "requirement_text": "Entities must establish an operational risk management framework covering identification, measurement, monitoring, and control of operational risks. Critical operations must be identified with tolerance levels for severe disruptions. Material operational risk events must be reported to APRA.",
+    "language": "en"
+  },
+  {
+    "id": "OSFI-001",
+    "source": "OSFI Guideline B-13 Technology and Cyber Risk Management (Canada)",
+    "category": "OSFI - Technology Risk Governance",
+    "requirement_text": "Federally regulated financial institutions must establish a technology and cyber risk management framework with board oversight. The framework must cover technology risk identification, assessment, mitigation, and monitoring. The board must approve the framework and receive annual reports.",
+    "language": "en"
+  },
+  {
+    "id": "OSFI-002",
+    "source": "OSFI Guideline B-13 Technology and Cyber Risk Management (Canada)",
+    "category": "OSFI - Cyber Incident Reporting",
+    "requirement_text": "Cyber incidents must be reported to OSFI as soon as possible and no later than 72 hours after becoming aware of a qualifying incident. Reports must include initial assessment of the incident, potential impacts, and planned remediation. Updates must be provided as the situation evolves.",
+    "language": "en"
+  },
+  {
+    "id": "SAMA-001",
+    "source": "SAMA Cyber Security Framework (Saudi Arabia)",
+    "category": "SAMA - Cyber Security Governance",
+    "requirement_text": "Member organizations must establish a cyber security governance framework with board and senior management oversight. A Chief Information Security Officer (CISO) must be appointed reporting to senior management. Cyber security strategy must be approved by the board and reviewed annually.",
+    "language": "en"
+  },
+  {
+    "id": "SAMA-002",
+    "source": "SAMA Cyber Security Framework (Saudi Arabia)",
+    "category": "SAMA - Cyber Security Controls",
+    "requirement_text": "Cyber security controls must cover 4 domains: Cyber Security Leadership and Governance, Cyber Security Risk Management and Compliance, Cyber Security Operations, and Cyber Security Third Party. Minimum security standards must be met for each domain. Non-compliance must be reported to SAMA.",
+    "language": "en"
+  },
+  {
+    "id": "SAMA-003",
+    "source": "SAMA Cyber Security Framework (Saudi Arabia)",
+    "category": "SAMA - Incident Reporting",
+    "requirement_text": "Cyber security incidents must be reported to SAMA within 2 hours of becoming aware of a qualifying incident. A preliminary report must be submitted within 48 hours. A detailed report must be submitted within 5 business days. A final report with lessons learned must be submitted within 30 days.",
+    "language": "en"
+  },
+  {
+    "id": "BDDK-001",
+    "source": "BDDK Bilgi Sistemleri Güvenliği Yönetmeliği (Türkiye)",
+    "category": "BDDK - IT Security Governance",
+    "requirement_text": "Bankalar bilgi sistemleri güvenliği politikalarını BDDK'ya bildirmelidir. Yönetim kurulu, bilgi sistemleri güvenliğinden sorumludur ve en az yıllık olarak güvenlik stratejisini gözden geçirmelidir. Bankalar bir Bilgi Sistemleri Güvenliği Sorumlusu atamalıdır.",
+    "language": "tr"
+  },
+  {
+    "id": "BDDK-002",
+    "source": "BDDK Bilgi Sistemleri Güvenliği Yönetmeliği (Türkiye)",
+    "category": "BDDK - Incident Reporting",
+    "requirement_text": "Bilgi sistemleri güvenliği olayları BDDK'ya en geç 2 saat içinde bildirilmelidir. Olayın tespitinden sonraki 5 iş günü içinde detaylı rapor sunulmalıdır. Olayın kapatılmasından sonra 30 gün içinde nihai rapor ve dersler çıkarılan hususlar BDDK'ya sunulmalıdır.",
+    "language": "tr"
+  },
+  {
+    "id": "BDDK-003",
+    "source": "BDDK Bilgi Sistemleri Güvenliği Yönetmeliği (Türkiye)",
+    "category": "BDDK - Data Localization",
+    "requirement_text": "Bankaların müşteri verileri Türkiye sınırları içinde saklanmalıdır. Yurt dışına veri aktarımı ancak BDDK izni ile ve yeterli güvenceler sağlanması şartıyla yapılabilir. Bulut bilişim hizmetlerinde veri yerelliği kuralı uygulanır.",
+    "language": "tr"
+  },
+  {
+    "id": "CBAR-EXT-001",
+    "source": "CBAR Azərbaycan - Genişlənmiş",
+    "category": "CBAR - İnfrastruktur Təhlükəsizliyi",
+    "requirement_text": "Bankların kritik IT infrastrukturu üçün fiziki təhlükəsizlik, elektrik təchizatı ehtiyat (N+1 və ya 2N), HVAC, yanğınsöndürmə və ətraf mühit monitorinqi təmin edilməlidir. Data centerlər 7/24 fiziki nəzarət altında olmalı, girişlər biometrik və badge sistemləri ilə idarə edilməlidir.",
+    "language": "az"
+  },
+  {
+    "id": "CBAR-EXT-002",
+    "source": "CBAR Azərbaycan - Genişlənmiş",
+    "category": "CBAR - Sistemlərarası Əlaqə Təhlükəsizliyi",
+    "requirement_text": "Bank sistemləri arasında məlumat mübadiləsi şifrəli kanallar (TLS 1.2+) vasitəsilə aparılmalıdır. API təhlükəsizliyi OAuth 2.0 və ya mutual TLS ilə təmin edilməlidir. SWIFT mesajları üçün ayrıca şəbəkə seqmentasiyası tətbiq edilməlidir.",
+    "language": "az"
+  },
+  {
+    "id": "CBAR-EXT-003",
+    "source": "CBAR Azərbaycan - Genişlənmiş",
+    "category": "CBAR - İnsident İdarəetmə",
+    "requirement_text": "Banklar kibertəhlükəsizlik insident idarəetmə planını hazırlamalı və ildə ən azı bir dəfə sınaqdan keçirməlidir. Kritik insidentlər CBAR-a 4 saat ərzində bildirilməli, 24 saat ərzində ətraflı hesabat təqdim edilməlidir. İnsidentdən sonra 30 gün ərzində yekun hesabat və əsaslandırıcı tədbirlər təqdim olunmalıdır.",
+    "language": "az"
+  },
+  {
+    "id": "CBAR-EXT-004",
+    "source": "CBAR Azərbaycan - Genişlənmiş",
+    "category": "CBAR - Məlumat Lokallaşdırma",
+    "requirement_text": "Bankların müşteri məlumatları Azərbaycan ərazisində saxlanmalıdır. Məlumatların xaricə çıxarılması yalnız CBAR razılığı və adekvat qoruyucu tədbirlərlə mümkündür. Bulut xidmətlərində data residency tələbi mütləqdir.",
+    "language": "az"
+  },
+  {
+    "id": "CBAR-EXT-005",
+    "source": "CBAR Azərbaycan - Genişlənmiş",
+    "category": "CBAR - İnsan Resursları Təhlükəsizliyi",
+    "requirement_text": "Bank işçiləri işə qəbul zamanı təhlükəsizlik yoxlamasından keçməli, gizlilik müqaviləsi imzalamalı və illik təhlükəsizlik təlimi almalıdır. Ayrılan işçilərin girişləri dərhal bağlanmalı, cihazlar geri alınmalı və data çıxarılması auditindən keçməlidir.",
+    "language": "az"
+  },
+  {
+    "id": "CBAR-EXT-006",
+    "source": "CBAR Azərbaycan - Genişlənmiş",
+    "category": "CBAR - Audit və Əlaqələndirmə",
+    "requirement_text": "Banklar illik IT audit həyata keçirməli və nəticələrini CBAR-a təqdim etməlidir. Xarici audit təşkilatları CBAR tərəfindən tanınmalıdır. Audit tapıntıları risk əsaslı müddət ərzində aradan qaldırılmalı və status CBAR-a rüblük hesabatlarla təqdim edilməlidir.",
+    "language": "az"
+  },
+  {
+    "id": "CBAR-EXT-007",
+    "source": "CBAR Azərbaycan - Genişlənmiş",
+    "category": "CBAR - Rəqəmsal Bankçılıq Təhlükəsizliyi",
+    "requirement_text": "Rəqəmsal bankçılıq xidmətləri (mobile banking, internet banking) üçün MFA tətbiq edilməli, transaction signing istifadə olunmalı, anomaly detection sistemləri yaradılmalıdır. Mobil tətbiqlərdə code obfuscation, anti-tampering və runtime protection tətbiq edilməlidir.",
+    "language": "az"
+  },
+  {
+    "id": "CBAR-EXT-008",
+    "source": "CBAR Azərbaycan - Genişlənmiş",
+    "category": "CBAR - Vendor Risk",
+    "requirement_text": "IT vendorları risk əsaslı təsnifləndirilməli, kritik vendorlar üçün ilikli security assessment aparılmalıdır. Vendor müqavilələrində security tələbləri, audit hüququ, insident bildirişi və exit strategy müəyyən edilməlidir. Vendor security performansı izlənilməlidir.",
+    "language": "az"
+  },
+  {
+    "id": "CBAR-EXT-009",
+    "source": "CBAR Azərbaycan - Genişlənmiş",
+    "category": "CBAR - Kritik İnfrastruktur Qorunması",
+    "requirement_text": "Kritik bank infrastrukturu (core banking, payment systems, SWIFT) ayrıca seqmentasiya, deep packet inspection, anomaly detection və 7/24 SOC monitorinqi ilə qorunmalıdır. Bu sistemlər üçün change window məhdudiyyətləri və ayrıca icazə tələbi tətbiq edilməlidir.",
+    "language": "az"
+  },
+  {
+    "id": "CBAR-EXT-010",
+    "source": "CBAR Azərbaycan - Genişlənmiş",
+    "category": "CBAR - Məlumat Bütövlüyü və Şifrələmə",
+    "requirement_text": "Bank məlumatları istirahət halında (at rest) AES-256 və ya daha güclü alqoritmlə, transfer halında (in transit) TLS 1.2+ ilə şifrələnməlidir. Şifrələmə açarları HSM (Hardware Security Module) vasitəsilə idarə edilməli, açar rotasiyası müəyyən edilmiş müddət ərzində aparılmalıdır.",
+    "language": "az"
+  }
+]

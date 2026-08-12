@@ -1,0 +1,142 @@
+[
+  {
+    "id": "DPS-001",
+    "source": "Data Platform Security",
+    "category": "Data Governance & Classification",
+    "requirement_text": "Məlumatların klassifikasiyası və kateqoriyalaşdırılması aparılmalıdır: public, internal, confidential, restricted səviyyələri müəyyən edilməli, hər kateqoriya üçün giriş və qoruma tələbləri sənədləşdirilməlidir.",
+    "language": "az"
+  },
+  {
+    "id": "DPS-002",
+    "source": "Data Platform Security",
+    "category": "Data Governance & Classification",
+    "requirement_text": "Məlumat sahibliyi (data ownership) müəyyən edilməlidir: hər məlumat dəsti üçün data owner təyin edilməli, məlumatın keyfiyyəti, girişi və həyat dövrü üçün məsuliyyət aydınlaşdırılmalıdır.",
+    "language": "az"
+  },
+  {
+    "id": "DPS-003",
+    "source": "Data Platform Security",
+    "category": "Data Access Control",
+    "requirement_text": "Məlumat platformasına giriş role-based access control (RBAC) ilə idarə edilməlidir. Ən az imtiyaz prinsipi (least privilege) tətbiq edilməli, giriş hüquqları müntəzəm gözden keçirilməlidir.",
+    "language": "az"
+  },
+  {
+    "id": "DPS-004",
+    "source": "Data Platform Security",
+    "category": "Data Access Control",
+    "requirement_text": "Məlumatlara giriş audit olunmalıdır: kim, nə vaxt, hansı məlumatı oxudu, dəyişdirdi və ya sildi qeyd edilməlidir. Audit loqları məxfilik qorunaraq saxlanmalı və müntəzəm yoxlanılmalıdır.",
+    "language": "az"
+  },
+  {
+    "id": "DPS-005",
+    "source": "Data Platform Security",
+    "category": "Data Access Control",
+    "requirement_text": "Məlumatlara giriş multi-faktor autentifikasiya (MFA) ilə təmin edilməlidir. Kritik məlumat dəstləri üçün əlavə təsdiq mexanizmləri (approval workflows) tətbiq edilməlidir.",
+    "language": "az"
+  },
+  {
+    "id": "DPS-006",
+    "source": "Data Platform Security",
+    "category": "Data Encryption",
+    "requirement_text": "Bütün sensitive məlumatlar saxlanma zamanı (at rest) şifrələnməlidir. Şifrələmə açarları ayrıca açar idarəetmə sistemi (KMS) ilə idarə edilməli, müntəzəm olaraq dövr edilmiş (rotated) olmalıdır.",
+    "language": "az"
+  },
+  {
+    "id": "DPS-007",
+    "source": "Data Platform Security",
+    "category": "Data Encryption",
+    "requirement_text": "Məlumatların ötürülməsi (in transit) zamanı TLS 1.2+ şifrələmə tətbiq edilməlidir. Daxili şəbəkədə belə məlumat axını şifrələnməlidir (zero-trust yanaşma).",
+    "language": "az"
+  },
+  {
+    "id": "DPS-008",
+    "source": "Data Platform Security",
+    "category": "Data Encryption",
+    "requirement_text": "Şifrələmə açarlarının idarə edilməsi ayrıca proses olmalıdır: açarların generasiyası, saxlanması, dövriyyəsi (rotation), paylaşması və məhv edilməsi üçün prosedur müəyyən edilməlidir.",
+    "language": "az"
+  },
+  {
+    "id": "DPS-009",
+    "source": "Data Platform Security",
+    "category": "Data Pipeline Security",
+    "requirement_text": "Məlumat boru xətləri (data pipelines) təhlükəsizliyi təmin edilməlidir: ETL/ELT proseslərində məlumat bütövlüyü yoxlanılmalı, pipeline-lərdə məlumat ifşası qarşısı alınmalıdır.",
+    "language": "az"
+  },
+  {
+    "id": "DPS-010",
+    "source": "Data Platform Security",
+    "category": "Data Pipeline Security",
+    "requirement_text": "Məlumat axını (data streaming) təhlükəsizliyi təmin edilməlidir: Kafka, RabbitMQ və ya digər message broker-lərdə məlumat şifrələnməli, autentifikasiya və avtorizasiya tətbiq edilməlidir.",
+    "language": "az"
+  },
+  {
+    "id": "DPS-011",
+    "source": "Data Platform Security",
+    "category": "Data Pipeline Security",
+    "requirement_text": "Məlumat miqrasiyası və transferi zamanı məlumat bütövlüyü yoxlanılmalıdır: checksum, hash və ya digər bütövlük yoxlamaları ilə məlumatın dəyişilmədiyi doğrulanmalıdır.",
+    "language": "az"
+  },
+  {
+    "id": "DPS-012",
+    "source": "Data Platform Security",
+    "category": "Data Storage Security",
+    "requirement_text": "Məlumat bazalarında və data lake-lərdə seqmentasiya tətbiq edilməlidir: sensitive məlumatlar ayrıca schema/zone-larda saxlanmalı, giriş məhdudlaşdırılmalıdır.",
+    "language": "az"
+  },
+  {
+    "id": "DPS-013",
+    "source": "Data Platform Security",
+    "category": "Data Storage Security",
+    "requirement_text": "Məlumatların saxlanması müddəti (data retention) və məhv edilməsi (data disposal) siyasəti müəyyən edilməlidir. Müddəti bitmiş məlumatlar təhlükəsiz şəkildə silinməlidir.",
+    "language": "az"
+  },
+  {
+    "id": "DPS-014",
+    "source": "Data Platform Security",
+    "category": "Data Storage Security",
+    "requirement_text": "Məlumatların backup nüsxələri təhlükəsiz saxlanmalı, şifrələnməli və müntəzəm bərpa sınaqlarından keçirilməlidir. Backup-lar əsas məlumatlardan ayrıca lokasiyada saxlanmalıdır.",
+    "language": "az"
+  },
+  {
+    "id": "DPS-015",
+    "source": "Data Platform Security",
+    "category": "Data Privacy & Compliance",
+    "requirement_text": "Fərdi məlumatların (PII) emalı qanunvericilik tələblərinə uyğun olmalıdır: razılıq əldə edilməli, emal məqsədi müəyyən edilməli, məlumat minimallaşdırma prinsipi tətbiq edilməlidir.",
+    "language": "az"
+  },
+  {
+    "id": "DPS-016",
+    "source": "Data Platform Security",
+    "category": "Data Privacy & Compliance",
+    "requirement_text": "Məlumat anonimləşdirmə və ya psevdonimləşdirmə texnikaları tətbiq edilməlidir: PII məlumatlar analitik və ya test məqsədli istifadə üçün anonimləşdirilməlidir.",
+    "language": "az"
+  },
+  {
+    "id": "DPS-017",
+    "source": "Data Platform Security",
+    "category": "Data Privacy & Compliance",
+    "requirement_text": "Məlumat ifşası halında (data breach) insident idarəetmə prosesi işə düşməlidir: müvafiq orqanlara və təsir edilmiş şəxslərə vaxtında məlumat verilməli, ifşa qeyd edilməli və tədqiq edilməlidir.",
+    "language": "az"
+  },
+  {
+    "id": "DPS-018",
+    "source": "Data Platform Security",
+    "category": "Data Quality & Integrity",
+    "requirement_text": "Məlumat keyfiyyəti idarə edilməlidir: məlumatın dəqiqliyi, tamamlığı, tutarlılığı və vaxtlılığı üçün metrikalar müəyyən edilməli, müntəzəm yoxlanılmalıdır.",
+    "language": "az"
+  },
+  {
+    "id": "DPS-019",
+    "source": "Data Platform Security",
+    "category": "Data Quality & Integrity",
+    "requirement_text": "Məlumat bütövlüyü təmin edilməlidir: məlumat dəyişiklikləri izlənməli, version control tətbiq edilməli, icazəsiz dəyişikliklər aşkarlanmalıdır.",
+    "language": "az"
+  },
+  {
+    "id": "DPS-020",
+    "source": "Data Platform Security",
+    "category": "Data Lineage & Metadata",
+    "requirement_text": "Məlumat mənşəyi (data lineage) izlənməlidir: məlumatın haradan gəldiyi, hansı transformasiyalardan keçdiyi və harada istifadə olunduğu sənədləşdirilməli və avtomatik izlənməlidir.",
+    "language": "az"
+  }
+]

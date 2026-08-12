@@ -1,0 +1,107 @@
+[
+  {
+    "id": "CBAR-IS-001",
+    "source": "CBAR Informasiya Təhlükəsizliyi",
+    "category": "İdarəetmə və İdarəçilik",
+    "requirement_text": "Bankın informasiya təhlükəsizliyi siyasəti müəyyən edilməli, sənədləşdirilməli və rəhbərlik tərəfindən təsdiq edilməlidir. Siyasət bankın strateji məqsədlərinə uyğun olmalıdır.",
+    "language": "az"
+  },
+  {
+    "id": "CBAR-IS-002",
+    "source": "CBAR Informasiya Təhlükəsizliyi",
+    "category": "İdarəetmə və İdarəçilik",
+    "requirement_text": "Bankda informasiya təhlükəsizliyi üzrə məsul şəxs (CISO və ya ekvivalent) təyin edilməlidir. Məsul şəxs təhlükəsizlik proqramına rəhbərlik etməli və rəhbərliyə hesabat verməlidir.",
+    "language": "az"
+  },
+  {
+    "id": "CBAR-IS-003",
+    "source": "CBAR Informasiya Təhlükəsizliyi",
+    "category": "Risk İdarəetməsi",
+    "requirement_text": "Bank informasiya təhlükəsizliyi risk qiymətləndirməsini müntəzəm olaraq həyata keçirməlidir. Risk qiymətləndirməsi nəticələri əsasında risk müalicə planı hazırlanmalıdır.",
+    "language": "az"
+  },
+  {
+    "id": "CBAR-IS-004",
+    "source": "CBAR Informasiya Təhlükəsizliyi",
+    "category": "Risk İdarəetməsi",
+    "requirement_text": "Bank yeni texnologiyalar və sistemlər tətbiq etməzdən əvvəl təhlükəsizlik risk qiymətləndirməsi aparmalıdır. AI sistemləri də daxil olmaqla bütün yeni texnologiyalar qiymətləndirilməlidir.",
+    "language": "az"
+  },
+  {
+    "id": "CBAR-IS-005",
+    "source": "CBAR Informasiya Təhlükəsizliyi",
+    "category": "İnsan Resursları Təhlükəsizliyi",
+    "requirement_text": "Bank əməkdaşları informasiya təhlükəsizliyi üzrə müntəzəm təlimlərdən keçməlidir. Təlim proqramı aktual təhlükəsizlik təhdidlərini əhatə etməlidir.",
+    "language": "az"
+  },
+  {
+    "id": "CBAR-IS-006",
+    "source": "CBAR Informasiya Təhlükəsizliyi",
+    "category": "Fiziki Təhlükəsizlik",
+    "requirement_text": "Bankın məlumat mərkəzləri və kritik infrastrukturu üçün fiziki təhlükəsizlik tədbirləri görülməlidir. Giriş nəzarəti, monitorinq və audit yolu təmin edilməlidir.",
+    "language": "az"
+  },
+  {
+    "id": "CBAR-IS-007",
+    "source": "CBAR Informasiya Təhlükəsizliyi",
+    "category": "Şəbəkə Təhlükəsizliyi",
+    "requirement_text": "Bank şəbəkələri seqmentasiya, firewall və təcrid tədbirləri ilə qorunmalıdır. Şəbəkə trafiki monitorinq olunmalı və anomaliyalar aşkarlanmalıdır.",
+    "language": "az"
+  },
+  {
+    "id": "CBAR-IS-008",
+    "source": "CBAR Informasiya Təhlükəsizliyi",
+    "category": "Şifrələmə",
+    "requirement_text": "Bank sensitive məlumatları şifrələməlidir - həm saxlanma (at rest), həm də ötürmə (in transit) zamanı. Şifrələmə standartları müəyyən edilməli və tətbiq edilməlidir.",
+    "language": "az"
+  },
+  {
+    "id": "CBAR-IS-009",
+    "source": "CBAR Informasiya Təhlükəsizliyi",
+    "category": "İnsident İdarəetməsi",
+    "requirement_text": "Bank informasiya təhlükəsizliyi insident idarəetmə prosesinə malik olmalıdır. İnsidentlər qeyd edilməli, tədqiq edilməli və vaxtında aradan qaldırılmalıdır.",
+    "language": "az"
+  },
+  {
+    "id": "CBAR-IS-010",
+    "source": "CBAR Informasiya Təhlükəsizliyi",
+    "category": "Biznes Davamlılığı",
+    "requirement_text": "Bank biznes davamlılığı və fəlakət bərpası planına malik olmalıdır. Plan müntəzəm sınaqdan keçirilməli və yenilənməlidir.",
+    "language": "az"
+  },
+  {
+    "id": "CBAR-IS-011",
+    "source": "CBAR Informasiya Təhlükəsizliyi",
+    "category": "Üçüncü Tərəf Riskləri",
+    "requirement_text": "Bank xarici xidmət təminatçıları və üçüncü tərəf vendorları üçün təhlükəsizlik qiymətləndirməsi aparmalıdır. Müqavilələrdə təhlükəsizlik tələbləri müəyyən edilməlidir.",
+    "language": "az"
+  },
+  {
+    "id": "CBAR-IS-012",
+    "source": "CBAR Informasiya Təhlükəsizliyi",
+    "category": "Audit və Uyğunluq",
+    "requirement_text": "Bank informasiya təhlükəsizliyi üzrə müntəzəm daxili və xarici auditlər keçirməlidir. Audit tapıntıları əsasında düzəlişici tədbirlər görülməlidir.",
+    "language": "az"
+  },
+  {
+    "id": "CBAR-IS-013",
+    "source": "CBAR Informasiya Təhlükəsizliyi",
+    "category": "Giriş Nəzarəti",
+    "requirement_text": "Bank sistemlərinə giriş identifikasiya, autentifikasiya və avtorizasiya tədbirləri ilə nəzarət edilməlidir. Multi-faktor autentifikasiya kritik sistemlər üçün tələb olunur.",
+    "language": "az"
+  },
+  {
+    "id": "CBAR-IS-014",
+    "source": "CBAR Informasiya Təhlükəsizliyi",
+    "category": "Məlumat İdarəçiliyi",
+    "requirement_text": "Bank məlumatların klassifikasiyası, saxlanması və məhv edilməsi üçün siyasət və prosedurlara malik olmalıdır. Məlumat həyat dövrü idarə olunmalıdır.",
+    "language": "az"
+  },
+  {
+    "id": "CBAR-IS-015",
+    "source": "CBAR Informasiya Təhlükəsizliyi",
+    "category": "Vulnerability Management",
+    "requirement_text": "Bank sistemlərinin müntəzəm vulnerability skanları və penetration testləri keçirilməlidir. Aşkar edilmiş zəifliklər vaxtında aradan qaldırılmalıdır.",
+    "language": "az"
+  }
+]

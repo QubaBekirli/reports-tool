@@ -1,0 +1,121 @@
+[
+  {
+    "id": "FAIR-001",
+    "source": "FAIR (Factor Analysis of Information Risk) Model",
+    "category": "FAIR - Risk Taxonomy",
+    "requirement_text": "Risk must be quantified using the FAIR taxonomy: Loss Event Frequency (LEF) = Threat Event Frequency × Vulnerability, and Loss Magnitude = Primary Loss + Secondary Loss. Risk must be expressed in monetary terms (annualized loss expectancy) to enable business-informed risk decisions.",
+    "language": "en"
+  },
+  {
+    "id": "FAIR-002",
+    "source": "FAIR (Factor Analysis of Information Risk) Model",
+    "category": "FAIR - Loss Magnitude Analysis",
+    "requirement_text": "Loss magnitude must be decomposed into primary loss (productivity, response, replacement, fines, competitive advantage) and secondary loss (customers, reputation, fines/judgments, competitive response). Secondary loss probability must be estimated. Loss estimates must use ranges (minimum, most likely, maximum).",
+    "language": "en"
+  },
+  {
+    "id": "FAIR-003",
+    "source": "FAIR (Factor Analysis of Information Risk) Model",
+    "category": "FAIR - Threat Community Analysis",
+    "requirement_text": "Threat communities must be defined and analyzed separately (external malicious, internal malicious, internal accidental, external accidental, natural). Each community's capability, intent, and frequency must be estimated. Risk analysis must aggregate loss expectancy across all relevant threat communities.",
+    "language": "en"
+  },
+  {
+    "id": "TARA-001",
+    "source": "TARA (Threat Assessment & Remediation Analysis)",
+    "category": "TARA - Threat Enumeration",
+    "requirement_text": "Threat enumeration must identify threat agents (nation-state, organized crime, insider, hacktivist), their capabilities, motivations, and likely attack vectors. Threat scenarios must be developed for each critical asset. Threat likelihood must be assessed based on historical data and intelligence.",
+    "language": "en"
+  },
+  {
+    "id": "STRIDE-001",
+    "source": "STRIDE Threat Modeling (Microsoft)",
+    "category": "STRIDE - Spoofing",
+    "requirement_text": "Spoofing threats must be addressed through strong authentication, mutual TLS, credential protection, and identity verification. Service-to-service authentication must be enforced. User identity must be verified through MFA. Spoofing attack scenarios must be tested in security assessments.",
+    "language": "en"
+  },
+  {
+    "id": "STRIDE-002",
+    "source": "STRIDE Threat Modeling (Microsoft)",
+    "category": "STRIDE - Tampering",
+    "requirement_text": "Tampering threats must be addressed through data integrity controls, digital signatures, HMAC verification, secure logging, and code signing. Data in transit must be protected with TLS. Data at rest must be protected with encryption and integrity checks. Tamper-evident seals must be used where physical access is a risk.",
+    "language": "en"
+  },
+  {
+    "id": "STRIDE-003",
+    "source": "STRIDE Threat Modeling (Microsoft)",
+    "category": "STRIDE - Repudiation",
+    "requirement_text": "Repudiation threats must be addressed through non-repudiation controls: digital signatures, audit logging with tamper protection, timestamps from trusted time sources, and secure audit trails. Users must not be able to deny actions. Logs must be append-only and immutable.",
+    "language": "en"
+  },
+  {
+    "id": "STRIDE-004",
+    "source": "STRIDE Threat Modeling (Microsoft)",
+    "category": "STRIDE - Information Disclosure",
+    "requirement_text": "Information disclosure threats must be addressed through encryption, access controls, data minimization, output filtering, and secure error handling. Sensitive data must not be exposed in error messages, logs, or API responses. Data classification must drive disclosure controls.",
+    "language": "en"
+  },
+  {
+    "id": "STRIDE-005",
+    "source": "STRIDE Threat Modeling (Microsoft)",
+    "category": "STRIDE - Denial of Service",
+    "requirement_text": "Denial of service threats must be addressed through rate limiting, resource quotas, redundancy, DDoS protection, capacity planning, and graceful degradation. Critical services must have documented DoS resilience strategies. DoS attack scenarios must be tested in resilience exercises.",
+    "language": "en"
+  },
+  {
+    "id": "STRIDE-006",
+    "source": "STRIDE Threat Modeling (Microsoft)",
+    "category": "STRIDE - Elevation of Privilege",
+    "requirement_text": "Elevation of privilege threats must be addressed through least privilege, RBAC, input validation, parameterized queries, and secure coding practices. Privilege boundaries must be clearly defined and enforced. Privilege escalation vulnerabilities must be prioritized for remediation.",
+    "language": "en"
+  },
+  {
+    "id": "NIST-800-160-001",
+    "source": "NIST SP 800-160 Systems Security Engineering",
+    "category": "NIST 800-160 - Security Engineering",
+    "requirement_text": "Systems security engineering must be integrated into the system development lifecycle. Security requirements must be defined, analyzed, and allocated to system components. Trustworthiness must be designed in, not bolted on. Security engineering must cover hardware, software, and human factors.",
+    "language": "en"
+  },
+  {
+    "id": "NIST-800-160-002",
+    "source": "NIST SP 800-160 Systems Security Engineering",
+    "category": "NIST 800-160 - Assurance Cases",
+    "requirement_text": "An assurance case must be developed for each critical system documenting claims, arguments, and evidence that security requirements are satisfied. Assurance case must be maintained throughout the system lifecycle. Assurance evidence must be independently verifiable.",
+    "language": "en"
+  },
+  {
+    "id": "RISK-QUANT-001",
+    "source": "Quantitative Risk Analysis Best Practices",
+    "category": "Risk - Monte Carlo Simulation",
+    "requirement_text": "Monte Carlo simulation must be used for complex risk scenarios where point estimates are insufficient. Simulations must run at least 10,000 iterations using probability distributions for loss frequency and magnitude. Results must present confidence intervals (P50, P90, P95) to decision-makers.",
+    "language": "en"
+  },
+  {
+    "id": "RISK-QUANT-002",
+    "source": "Quantitative Risk Analysis Best Practices",
+    "category": "Risk - Risk Treatment ROI",
+    "requirement_text": "Risk treatment decisions must be evaluated using cost-benefit analysis. Control implementation cost must be compared against risk reduction (ALE delta). Controls with positive ROI and alignment with risk appetite must be prioritized. Control effectiveness must be measured post-implementation.",
+    "language": "en"
+  },
+  {
+    "id": "RISK-QUANT-003",
+    "source": "Quantitative Risk Analysis Best Practices",
+    "category": "Risk - Risk Aggregation",
+    "requirement_text": "Enterprise risk must be aggregated across business units, systems, and threat scenarios. Aggregation must account for risk correlations and dependencies (shared infrastructure, common vendors, cascading failures). Aggregate risk must be compared against organizational risk appetite and tolerance.",
+    "language": "en"
+  },
+  {
+    "id": "RISK-QUANT-004",
+    "source": "ISO 31000 - Risk Monitoring",
+    "category": "Risk - Emerging Risk",
+    "requirement_text": "Emerging risks must be identified through environmental scanning, threat intelligence, regulatory monitoring, and technology trend analysis. Emerging risk register must be reviewed quarterly by the risk committee. Risk treatment plans must be developed for emerging risks exceeding defined thresholds.",
+    "language": "en"
+  },
+  {
+    "id": "RISK-QUANT-005",
+    "source": "ISO 31000 - Risk Monitoring",
+    "category": "Risk - Risk Culture Assessment",
+    "requirement_text": "Risk culture must be assessed periodically through surveys, interviews, and behavioral indicators. Risk culture metrics must include risk awareness, accountability, communication, and learning. Culture gaps must be addressed through training, incentives, and leadership messaging.",
+    "language": "en"
+  }
+]

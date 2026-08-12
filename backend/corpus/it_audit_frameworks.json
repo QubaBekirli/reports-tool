@@ -1,0 +1,156 @@
+[
+  {
+    "id": "ISO-19011-001",
+    "source": "ISO 19011 Guidelines for Auditing Management Systems",
+    "category": "ISO 19011 - Audit Principles",
+    "requirement_text": "Audits must follow fundamental principles: integrity, fair presentation, due professional care, confidentiality, independence, and evidence-based approach. Auditors must be independent of the activity being audited and free from bias and conflict of interest.",
+    "language": "en"
+  },
+  {
+    "id": "ISO-19011-002",
+    "source": "ISO 19011 Guidelines for Auditing Management Systems",
+    "category": "ISO 19011 - Audit Programme Management",
+    "requirement_text": "An audit programme must be established including audit objectives, scope, criteria, methods, and schedule. The programme must consider risk, importance of processes, and previous audit results. Programme effectiveness must be monitored and reviewed.",
+    "language": "en"
+  },
+  {
+    "id": "ISO-19011-003",
+    "source": "ISO 19011 Guidelines for Auditing Management Systems",
+    "category": "ISO 19011 - Competence of Auditors",
+    "requirement_text": "Auditors must demonstrate competence in personal behavior, knowledge and skills (generic and specific), and have appropriate education, training, and experience. Audit teams must have collective competence covering all audit scope areas. Competence must be evaluated and maintained.",
+    "language": "en"
+  },
+  {
+    "id": "ISO-19011-004",
+    "source": "ISO 19011 Guidelines for Auditing Management Systems",
+    "category": "ISO 19011 - Audit Findings & Reporting",
+    "requirement_text": "Audit findings must be evaluated against audit criteria and classified as conformities or nonconformities. Nonconformities must include clear evidence, objective criteria violated, and risk impact. Audit reports must be distributed to management within agreed timeframes. Follow-up must verify corrective action implementation.",
+    "language": "en"
+  },
+  {
+    "id": "NIST-800-115-001",
+    "source": "NIST SP 800-115 Technical Guide to Information Security Testing",
+    "category": "NIST 800-115 - Security Testing",
+    "requirement_text": "Security testing must include network mapping, vulnerability scanning, wireless scanning, application testing, and password cracking. Testing must be conducted at least annually and after significant changes. Results must be documented with remediation priorities and tracked to closure.",
+    "language": "en"
+  },
+  {
+    "id": "NIST-800-115-002",
+    "source": "NIST SP 800-115 Technical Guide to Information Security Testing",
+    "category": "NIST 800-115 - Penetration Testing",
+    "requirement_text": "Penetration testing must simulate real-world attacks to identify exploitable vulnerabilities. Testing must include planning, discovery, attack, and reporting phases. Tests must cover external, internal, wireless, and social engineering vectors. Findings must be classified by risk and remediated within risk-based timeframes.",
+    "language": "en"
+  },
+  {
+    "id": "NIST-800-115-003",
+    "source": "NIST SP 800-115 Technical Guide to Information Security Testing",
+    "category": "NIST 800-115 - Vulnerability Management",
+    "requirement_text": "Vulnerability scanning must be performed at least weekly on internet-facing systems and monthly on internal systems. Critical vulnerabilities (CVSS 9.0+) must be remediated within 15 days, high (7.0-8.9) within 30 days, medium (4.0-6.9) within 90 days. Scans must be authenticated where possible.",
+    "language": "en"
+  },
+  {
+    "id": "COBIT-AUDIT-001",
+    "source": "COBIT 2019 - Audit Assurance",
+    "category": "COBIT - Assurance Approach",
+    "requirement_text": "IT audits using COBIT must assess governance and management objectives across the EDM, APO, BAI, DSS, MEA domains. Each objective must be assessed for capability level (0-5) using the COBIT capability model. Audit conclusions must map to business risk and value.",
+    "language": "en"
+  },
+  {
+    "id": "COBIT-AUDIT-002",
+    "source": "COBIT 2019 - Design Factors",
+    "category": "COBIT - Governance System Design",
+    "requirement_text": "IT governance system design must consider enterprise strategy, goals, risk profile, compliance requirements, IT-related issues, and culture. Design factors must drive the selection and prioritization of governance and management objectives. The governance system must be tailored, not generic.",
+    "language": "en"
+  },
+  {
+    "id": "CISA-001",
+    "source": "ISACA CISA Practice Areas",
+    "category": "CISA - IS Audit Standards",
+    "requirement_text": "IS audits must comply with ISACA IT Audit Standards (1001-1009) covering independence, professional competence, planning, supervision, evidence, reporting, follow-up, and irregularities. Auditors must maintain CISA certification through continuing professional education (CPE) of at least 20 hours annually.",
+    "language": "en"
+  },
+  {
+    "id": "CISA-002",
+    "source": "ISACA CISA Practice Areas",
+    "category": "CISA - Audit Evidence",
+    "requirement_text": "Audit evidence must be sufficient, competent, and relevant. Evidence must be collected through inspection, observation, inquiry, confirmation, recomputation, and analytical procedures. Evidence must support audit findings and conclusions. Sampling methodology must be documented and statistically valid.",
+    "language": "en"
+  },
+  {
+    "id": "CISA-003",
+    "source": "ISACA CISA Practice Areas",
+    "category": "CISA - CAATs",
+    "requirement_text": "Computer-Assisted Audit Techniques (CAATs) must be used for testing large datasets, continuous auditing, and control testing. CAATs include Generalized Audit Software (GAS), embedded audit modules, and data analytics tools. CAAT procedures and results must be documented.",
+    "language": "en"
+  },
+  {
+    "id": "AUDIT-EXT-001",
+    "source": "ISACA ITAF Part 3",
+    "category": "IT Audit - Application Controls Audit",
+    "requirement_text": "Application controls audits must assess input controls (validation, completeness, authorization), processing controls (data integrity, error handling, reconciliation), and output controls (distribution, logging, retention). Automated controls must be tested through both design and operating effectiveness testing.",
+    "language": "en"
+  },
+  {
+    "id": "AUDIT-EXT-002",
+    "source": "ISACA ITAF Part 3",
+    "category": "IT Audit - Cloud Audit",
+    "requirement_text": "Cloud environment audits must assess shared responsibility model understanding, cloud configuration (IAM, network, storage), data residency, encryption key management, and provider compliance certifications (SOC 2, ISO 27001, FedRAMP). Cloud-specific risks (misconfiguration, API exposure, shadow IT) must be evaluated.",
+    "language": "en"
+  },
+  {
+    "id": "AUDIT-EXT-003",
+    "source": "ISACA ITAF Part 3",
+    "category": "IT Audit - Cybersecurity Audit",
+    "requirement_text": "Cybersecurity audits must assess threat detection capabilities, SOC/SIEM effectiveness, threat intelligence integration, incident response readiness, endpoint protection, email security, and security awareness. Audit must verify alignment with NIST CSF or ISO 27001 controls. Red team exercise results must be reviewed.",
+    "language": "en"
+  },
+  {
+    "id": "AUDIT-EXT-004",
+    "source": "ISACA ITAF Part 3",
+    "category": "IT Audit - Privacy Audit",
+    "requirement_text": "Privacy audits must assess compliance with applicable privacy regulations (GDPR, CCPA, local laws). Audit scope must include data mapping, lawful basis verification, consent management, data subject rights fulfillment, DPIA completion, cross-border transfer mechanisms, and breach notification readiness.",
+    "language": "en"
+  },
+  {
+    "id": "AUDIT-EXT-005",
+    "source": "ISACA ITAF Part 3",
+    "category": "IT Audit - API & Microservices Audit",
+    "requirement_text": "API and microservices audits must assess API authentication, authorization, rate limiting, input validation, data exposure, and API gateway configuration. Microservices must be evaluated for service mesh security, inter-service authentication, secret management, and container security posture.",
+    "language": "en"
+  },
+  {
+    "id": "AUDIT-EXT-006",
+    "source": "ISACA ITAF Part 3",
+    "category": "IT Audit - DevSecOps Audit",
+    "requirement_text": "DevSecOps audits must assess CI/CD pipeline security, infrastructure-as-code (IaC) scanning, container image scanning, secret detection in code, SAST/DAST integration, and security gate enforcement. Shift-left security practices must be evaluated. Pipeline access controls and approval workflows must be reviewed.",
+    "language": "en"
+  },
+  {
+    "id": "AUDIT-EXT-007",
+    "source": "ISACA ITAF Part 3",
+    "category": "IT Audit - Data Governance Audit",
+    "requirement_text": "Data governance audits must assess data ownership, data quality metrics, data classification enforcement, data retention policies, data lineage documentation, and master data management. Data stewardship roles must be defined and active. Data quality dashboards must be reviewed for trends and remediation.",
+    "language": "en"
+  },
+  {
+    "id": "AUDIT-EXT-008",
+    "source": "ISACA ITAF Part 3",
+    "category": "IT Audit - AI System Audit",
+    "requirement_text": "AI system audits must assess model governance, training data integrity, model fairness and bias testing, explainability, human-in-the-loop controls, model monitoring, and AI risk assessment. Model cards must be verified for accuracy. Production model drift must be monitored and documented.",
+    "language": "en"
+  },
+  {
+    "id": "AUDIT-EXT-009",
+    "source": "ISACA ITAF Part 3",
+    "category": "IT Audit - Third-Party Audit",
+    "requirement_text": "Third-party IT audits must assess vendor security posture, SOC 2/ISO 27001 certifications, penetration test reports, incident response capabilities, data handling practices, and sub-contractor management. Right-to-audit clauses must be exercised for critical vendors. Vendor risk scores must be validated.",
+    "language": "en"
+  },
+  {
+    "id": "AUDIT-EXT-010",
+    "source": "ISACA ITAF Part 3",
+    "category": "IT Audit - Identity & Access Audit",
+    "requirement_text": "IAM audits must assess identity lifecycle (joiner-mover-leaver), access request and approval workflows, privileged access management (PAM), MFA coverage, periodic access reviews, and orphaned account detection. Role-based access control (RBAC) role definitions must be reviewed for SoD conflicts.",
+    "language": "en"
+  }
+]

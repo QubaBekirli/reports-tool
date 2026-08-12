@@ -1,0 +1,142 @@
+[
+  {
+    "id": "ACS-001",
+    "source": "Architecture Committee Security",
+    "category": "Security Architecture Principles",
+    "requirement_text": "Təhlükəsizlik arxitekturu prinsipləri müəyyən edilməli və bütün sistem dizaynlarına tətbiq edilməlidir: defense-in-depth, zero-trust, least privilege, fail-safe defaults və economy of mechanism prinsipləri sənədləşdirilməlidir.",
+    "language": "az"
+  },
+  {
+    "id": "ACS-002",
+    "source": "Architecture Committee Security",
+    "category": "Security Architecture Principles",
+    "requirement_text": "Təhlükəsizlik dizayn default olaraq (secure by default) tətbiq edilməlidir: bütün yeni sistemlər təhlükəsiz konfiqurasiya ilə işə düşməli, açıq portlar və default parollar qadağan edilməlidir.",
+    "language": "az"
+  },
+  {
+    "id": "ACS-003",
+    "source": "Architecture Committee Security",
+    "category": "Security Architecture Principles",
+    "requirement_text": "Zero-trust arxitekturası prinsipləri tətbiq edilməlidir: heç bir istifadəçi və ya sistemə default olaraq etibar edilməməli, hər sorğu doğrulanmalı, ən az imtiyaz tətbiq edilməlidir.",
+    "language": "az"
+  },
+  {
+    "id": "ACS-004",
+    "source": "Architecture Committee Security",
+    "category": "Network Security Architecture",
+    "requirement_text": "Şəbəkə seqmentasiyası tətbiq edilməlidir: DMZ, internal zone, restricted zone-lar ayrılmalı, zonalar arası trafik firewall ilə nəzarət edilməlidir.",
+    "language": "az"
+  },
+  {
+    "id": "ACS-005",
+    "source": "Architecture Committee Security",
+    "category": "Network Security Architecture",
+    "requirement_text": "Şəbəkə trafik monitorinqi və insident aşkarlama (IDS/IPS) tətbiq edilməlidir: anomaliya aşkarlama, deep packet inspection və threat intelligence inteqrasiyası təmin edilməlidir.",
+    "language": "az"
+  },
+  {
+    "id": "ACS-006",
+    "source": "Architecture Committee Security",
+    "category": "Network Security Architecture",
+    "requirement_text": "Şəbəkə giriş nöqtələri (entry points) minimuma endirilməli və qorunmalıdır: API gateway, reverse proxy və WAF (Web Application Firewall) tətbiq edilməlidir.",
+    "language": "az"
+  },
+  {
+    "id": "ACS-007",
+    "source": "Architecture Committee Security",
+    "category": "Application Security Architecture",
+    "requirement_text": "Tətbiq təhlükəsizliyi arxitekturası OWASP standartlarına uyğun olmalıdır: input validation, output encoding, session management, authentication və authorization mexanizmləri dizayn edilməlidir.",
+    "language": "az"
+  },
+  {
+    "id": "ACS-008",
+    "source": "Architecture Committee Security",
+    "category": "Application Security Architecture",
+    "requirement_text": "API təhlükəsizliyi təmin edilməlidir: API authentication, rate limiting, quota management, input validation və output filtering tətbiq edilməlidir. API gateway-dən istifadə tövsiyə olunur.",
+    "language": "az"
+  },
+  {
+    "id": "ACS-009",
+    "source": "Architecture Committee Security",
+    "category": "Application Security Architecture",
+    "requirement_text": "Mikroservis arxitekturasında service-to-service kommunikasiya təhlükəsiz olmalıdır: mutual TLS (mTLS), service mesh və ya digər təhlükəsiz kommunikasiya mexanizmləri tətbiq edilməlidir.",
+    "language": "az"
+  },
+  {
+    "id": "ACS-010",
+    "source": "Architecture Committee Security",
+    "category": "Identity & Access Management",
+    "requirement_text": "İdentifikasiya və giriş idarəetmə (IAM) arxitekturası müəyyən edilməlidir: SSO (Single Sign-On), MFA, role-based access control və privileged access management inteqrasiyası təmin edilməlidir.",
+    "language": "az"
+  },
+  {
+    "id": "ACS-011",
+    "source": "Architecture Committee Security",
+    "category": "Identity & Access Management",
+    "requirement_text": "Privileged access management (PAM) tətbiq edilməlidir: admin hüquqları olan hesablar ayrıca idarə edilməli, session recording və just-in-time access tətbiq edilməlidir.",
+    "language": "az"
+  },
+  {
+    "id": "ACS-012",
+    "source": "Architecture Committee Security",
+    "category": "Identity & Access Management",
+    "requirement_text": "Secret management arxitekturası müəyyən edilməlidir: parollar, API açarları, sertifikatlar və digər secret-lər secure vault-da saxlanmalı, avtomatik rotation təmin edilməlidir.",
+    "language": "az"
+  },
+  {
+    "id": "ACS-013",
+    "source": "Architecture Committee Security",
+    "category": "Cloud Security Architecture",
+    "requirement_text": "Bulud infrastrukturunda təhlükəsizlik arxitekturası müəyyən edilməlidir: bulud təhlükəsizliyi shared responsibility model-i başa düşülməli, CSPM (Cloud Security Posture Management) tətbiq edilməlidir.",
+    "language": "az"
+  },
+  {
+    "id": "ACS-014",
+    "source": "Architecture Committee Security",
+    "category": "Cloud Security Architecture",
+    "requirement_text": "Konteyner və Kubernetes təhlükəsizliyi təmin edilməlidir: image scanning, pod security policies, network policies və runtime protection tətbiq edilməlidir.",
+    "language": "az"
+  },
+  {
+    "id": "ACS-015",
+    "source": "Architecture Committee Security",
+    "category": "Cloud Security Architecture",
+    "requirement_text": "Infrastructure as Code (IaC) təhlükəsizliyi təmin edilməlidir: Terraform, Ansible və ya digər IaC tool-larında təhlükəsizlik konfiqurasiyası doğrulanmalı, IaC scanning tətbiq edilməlidir.",
+    "language": "az"
+  },
+  {
+    "id": "ACS-016",
+    "source": "Architecture Committee Security",
+    "category": "Security Monitoring & Logging",
+    "requirement_text": "Mərkəzləşdirilmiş log idarəetmə (SIEM) arxitekturası müəyyən edilməlidir: bütün sistemlərdən loqlar toplanmalı, korrelyasiya qaydaları tətbiq edilməli, real-time alerting təmin edilməlidir.",
+    "language": "az"
+  },
+  {
+    "id": "ACS-017",
+    "source": "Architecture Committee Security",
+    "category": "Security Monitoring & Logging",
+    "requirement_text": "Security monitoring üçün metrikalar və dashboard-lar müəyyən edilməlidir: təhlükəsizlik hadisələri, insident sayı, MTTR (Mean Time To Respond), vulnerability statusu izlənməlidir.",
+    "language": "az"
+  },
+  {
+    "id": "ACS-018",
+    "source": "Architecture Committee Security",
+    "category": "Resilience & Business Continuity",
+    "requirement_text": "Sistem resilyens (resilience) arxitekturası müəyyən edilməlidir: high availability, disaster recovery, RTO (Recovery Time Objective) və RPO (Recovery Point Objective) tələbləri sənədləşdirilməlidir.",
+    "language": "az"
+  },
+  {
+    "id": "ACS-019",
+    "source": "Architecture Committee Security",
+    "category": "Resilience & Business Continuity",
+    "requirement_text": "Təhlükəsizlik arxitekturası dizayn review prosesinə tabe edilməlidir: bütün yeni sistemlər və əhəmiyyətli dəyişikliklər Architecture Committee tərəfindən təhlükəsizlik baxımından reviewed edilməlidir.",
+    "language": "az"
+  },
+  {
+    "id": "ACS-020",
+    "source": "Architecture Committee Security",
+    "category": "Security Architecture Review",
+    "requirement_text": "Təhlükəsizlik arxitekturası müntəzəm olaraq yenidən qiymətləndirilməlidir: yeni təhdidlər, texnologiya dəyişiklikləri və biznes tələblərinə uyğun olaraq arxitektura yenilənməlidir.",
+    "language": "az"
+  }
+]

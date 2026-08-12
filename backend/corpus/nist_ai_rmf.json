@@ -1,0 +1,156 @@
+[
+  {
+    "id": "NIST-AI-RMF-001",
+    "source": "NIST AI RMF",
+    "category": "Govern - Risk Management",
+    "requirement_text": "AI risk management policies and procedures must be established, documented, and maintained. The organization shall define roles and responsibilities for AI system governance.",
+    "language": "en"
+  },
+  {
+    "id": "NIST-AI-RMF-002",
+    "source": "NIST AI RMF",
+    "category": "Govern - Risk Management",
+    "requirement_text": "Organizational AI risk tolerance must be defined and documented. Risk thresholds should guide decisions about AI system design, deployment, and operation.",
+    "language": "en"
+  },
+  {
+    "id": "NIST-AI-RMF-003",
+    "source": "NIST AI RMF",
+    "category": "Govern - Accountability",
+    "requirement_text": "Clear lines of accountability and responsibility for AI system outcomes must be established. A designated AI risk management owner must be assigned.",
+    "language": "en"
+  },
+  {
+    "id": "NIST-AI-RMF-004",
+    "source": "NIST AI RMF",
+    "category": "Govern - Workforce",
+    "requirement_text": "Organizational workforce must be trained on AI risk management. Training programs should cover AI literacy, ethical considerations, and incident response procedures.",
+    "language": "en"
+  },
+  {
+    "id": "NIST-AI-RMF-005",
+    "source": "NIST AI RMF",
+    "category": "Govern - External Stakeholders",
+    "requirement_text": "Policies for engaging with external stakeholders (vendors, customers, regulators) regarding AI risk must be established and maintained.",
+    "language": "en"
+  },
+  {
+    "id": "NIST-AI-RMF-006",
+    "source": "NIST AI RMF",
+    "category": "Map - Context",
+    "requirement_text": "The context in which the AI system operates must be documented, including the intended use, deployment environment, and potential interactions with other systems.",
+    "language": "en"
+  },
+  {
+    "id": "NIST-AI-RMF-007",
+    "source": "NIST AI RMF",
+    "category": "Map - Data",
+    "requirement_text": "Data used for AI system training, validation, and testing must be documented. Data provenance, quality, and potential biases must be assessed.",
+    "language": "en"
+  },
+  {
+    "id": "NIST-AI-RMF-008",
+    "source": "NIST AI RMF",
+    "category": "Map - Risks",
+    "requirement_text": "Potential risks and harms of the AI system must be identified and documented. This includes risks to individuals, organizations, and society.",
+    "language": "en"
+  },
+  {
+    "id": "NIST-AI-RMF-009",
+    "source": "NIST AI RMF",
+    "category": "Map - Third Parties",
+    "requirement_text": "Risks from third-party entities (data providers, model vendors, cloud services) must be identified and assessed. Supply chain risks for AI systems must be documented.",
+    "language": "en"
+  },
+  {
+    "id": "NIST-AI-RMF-010",
+    "source": "NIST AI RMF",
+    "category": "Measure - Testing",
+    "requirement_text": "AI systems must be tested and evaluated for performance, safety, and reliability. Testing must include edge cases and adversarial scenarios.",
+    "language": "en"
+  },
+  {
+    "id": "NIST-AI-RMF-011",
+    "source": "NIST AI RMF",
+    "category": "Measure - Metrics",
+    "requirement_text": "Appropriate metrics for evaluating AI system trustworthiness must be defined and tracked. Metrics should cover accuracy, robustness, fairness, and privacy.",
+    "language": "en"
+  },
+  {
+    "id": "NIST-AI-RMF-012",
+    "source": "NIST AI RMF",
+    "category": "Measure - Monitoring",
+    "requirement_text": "Continuous monitoring of AI system performance and impact must be implemented. Monitoring should detect drift, degradation, and emerging risks.",
+    "language": "en"
+  },
+  {
+    "id": "NIST-AI-RMF-013",
+    "source": "NIST AI RMF",
+    "category": "Measure - Feedback",
+    "requirement_text": "Feedback mechanisms for AI system users and affected parties must be established. Feedback should be used to improve the system and its governance.",
+    "language": "en"
+  },
+  {
+    "id": "NIST-AI-RMF-014",
+    "source": "NIST AI RMF",
+    "category": "Manage - Mitigation",
+    "requirement_text": "Risk mitigation strategies must be developed and implemented for identified AI risks. Mitigation should follow a risk-based prioritization.",
+    "language": "en"
+  },
+  {
+    "id": "NIST-AI-RMF-015",
+    "source": "NIST AI RMF",
+    "category": "Manage - Incident Response",
+    "requirement_text": "AI system incident response procedures must be established. Incidents must be documented, investigated, and reported to relevant stakeholders.",
+    "language": "en"
+  },
+  {
+    "id": "NIST-AI-RMF-016",
+    "source": "NIST AI RMF",
+    "category": "Manage - Change Management",
+    "requirement_text": "Change management procedures for AI system updates, retraining, and model modifications must be established. Changes must be assessed for new risks.",
+    "language": "en"
+  },
+  {
+    "id": "NIST-AI-RMF-017",
+    "source": "NIST AI RMF",
+    "category": "Govern - Documentation",
+    "requirement_text": "All AI risk management activities must be documented. Documentation should be maintained and accessible to relevant stakeholders.",
+    "language": "en"
+  },
+  {
+    "id": "NIST-AI-RMF-018",
+    "source": "NIST AI RMF",
+    "category": "Govern - Transparency",
+    "requirement_text": "Transparency about AI system capabilities, limitations, and risks must be maintained. Relevant information must be communicated to stakeholders.",
+    "language": "en"
+  },
+  {
+    "id": "NIST-AI-RMF-019",
+    "source": "NIST AI RMF",
+    "category": "Map - Data Security",
+    "requirement_text": "Data security controls must be applied to AI system training, validation, and production data. This includes encryption, access controls, data integrity verification, and secure data pipelines.",
+    "language": "en"
+  },
+  {
+    "id": "NIST-AI-RMF-020",
+    "source": "NIST AI RMF",
+    "category": "Map - Model Security",
+    "requirement_text": "AI model security must address model theft, model poisoning, adversarial inputs, and prompt injection. Model artifacts must be protected with access controls and integrity verification.",
+    "language": "en"
+  },
+  {
+    "id": "NIST-AI-RMF-021",
+    "source": "NIST AI RMF",
+    "category": "Measure - Adversarial Testing",
+    "requirement_text": "AI systems must undergo adversarial testing including red-teaming, robustness testing against perturbations, and evaluation of model behavior under malicious inputs.",
+    "language": "en"
+  },
+  {
+    "id": "NIST-AI-RMF-022",
+    "source": "NIST AI RMF",
+    "category": "Manage - Third-Party AI Risk",
+    "requirement_text": "Third-party AI models, datasets, and APIs must be assessed for security vulnerabilities, licensing restrictions, data provenance, and supply chain integrity before integration.",
+    "language": "en"
+  }
+]

@@ -1,0 +1,142 @@
+[
+  {
+    "id": "IIA-001",
+    "source": "IIA International Standards for the Professional Practice of Internal Auditing",
+    "category": "IIA - Core Principles",
+    "requirement_text": "Internal audit must demonstrate integrity, objectivity, confidentiality, and competency. The internal audit activity must add value, be risk-based, and align with organizational strategies. The CAE must report functionally to the board and administratively to senior management.",
+    "language": "en"
+  },
+  {
+    "id": "IIA-002",
+    "source": "IIA International Standards for the Professional Practice of Internal Auditing",
+    "category": "IIA - Independence & Objectivity",
+    "requirement_text": "Internal audit must be independent, and internal auditors must be objective in performing their work. The CAE must report to a level within the organization that allows the internal audit activity to fulfill its responsibilities. Internal auditors must not assess operations for which they were previously responsible.",
+    "language": "en"
+  },
+  {
+    "id": "IIA-003",
+    "source": "IIA International Standards for the Professional Practice of Internal Auditing",
+    "category": "IIA - Engagement Planning",
+    "requirement_text": "Each internal audit engagement must be planned with documented objectives, scope, timing, and resource allocations. Risk assessment must be performed to plan the engagement. Engagement work program must be developed and approved before fieldwork begins.",
+    "language": "en"
+  },
+  {
+    "id": "IIA-004",
+    "source": "IIA International Standards for the Professional Practice of Internal Auditing",
+    "category": "IIA - Performing the Engagement",
+    "requirement_text": "Internal auditors must identify, analyze, evaluate, and record sufficient information to achieve engagement objectives. Work must be supervised. Findings must be supported by sufficient, reliable, relevant, and useful information. Sampling methodology must be documented.",
+    "language": "en"
+  },
+  {
+    "id": "IIA-005",
+    "source": "IIA International Standards for the Professional Practice of Internal Auditing",
+    "category": "IIA - Communicating Results",
+    "requirement_text": "Internal auditors must communicate engagement results to appropriate parties. Communications must include objectives, scope, findings, conclusions, and recommendations. Results must be communicated without undue delay. Management's corrective action plans must be included in the report.",
+    "language": "en"
+  },
+  {
+    "id": "IIA-006",
+    "source": "IIA International Standards for the Professional Practice of Internal Auditing",
+    "category": "IIA - Quality Assurance Improvement Program",
+    "requirement_text": "A Quality Assurance and Improvement Program (QAIP) must be maintained covering internal assessments (ongoing and periodic) and external assessments (at least every 5 years). The CAE must report QAIP results to senior management and the board. Conformance with IIA Standards must be assessed.",
+    "language": "en"
+  },
+  {
+    "id": "COSO-IC-001",
+    "source": "COSO Internal Control - Integrated Framework (2013)",
+    "category": "COSO IC - Control Environment",
+    "requirement_text": "The control environment must establish integrity and ethical values, board independence, organizational structure, commitment to competence, and accountability. Management must demonstrate commitment to integrity and ethical values. The control environment sets the tone for internal control.",
+    "language": "en"
+  },
+  {
+    "id": "COSO-IC-002",
+    "source": "COSO Internal Control - Integrated Framework (2013)",
+    "category": "COSO IC - Risk Assessment",
+    "requirement_text": "Risk assessment must identify and analyze risks to objective achievement, including change management. Fraud risk must be specifically assessed. Risks must be prioritized based on likelihood and impact. Risk tolerance must be defined for each objective category.",
+    "language": "en"
+  },
+  {
+    "id": "COSO-IC-003",
+    "source": "COSO Internal Control - Integrated Framework (2013)",
+    "category": "COSO IC - Control Activities",
+    "requirement_text": "Control activities must be selected and developed to address assessed risks. Controls must include both preventive and detective, manual and automated. IT general controls and application controls must support process-level controls. Control activities must be documented and communicated.",
+    "language": "en"
+  },
+  {
+    "id": "COSO-IC-004",
+    "source": "COSO Internal Control - Integrated Framework (2013)",
+    "category": "COSO IC - Information & Communication",
+    "requirement_text": "Relevant and quality information must be obtained, generated, and used to support internal control functioning. Information must be timely, current, accurate, and accessible. Internal and external communication must support internal control objectives. Communication channels must be open and bidirectional.",
+    "language": "en"
+  },
+  {
+    "id": "COSO-IC-005",
+    "source": "COSO Internal Control - Integrated Framework (2013)",
+    "category": "COSO IC - Monitoring Activities",
+    "requirement_text": "Ongoing evaluations and separate evaluations must be conducted to determine if internal control components are present and functioning. Deficiencies must be identified and communicated to parties responsible for corrective action. Material weaknesses must be reported to senior management and the board.",
+    "language": "en"
+  },
+  {
+    "id": "KING-IV-001",
+    "source": "King IV Report on Corporate Governance (South Africa)",
+    "category": "King IV - IT Governance",
+    "requirement_text": "The governing body must assume responsibility for IT governance by setting direction, approving strategy, and monitoring IT alignment with business objectives. IT must be integrated into enterprise risk management. The governing body must approve IT investment and monitor value delivery.",
+    "language": "en"
+  },
+  {
+    "id": "KING-IV-002",
+    "source": "King IV Report on Corporate Governance (South Africa)",
+    "category": "King IV - Data Governance",
+    "requirement_text": "The governing body must ensure data governance is established covering data quality, data security, data privacy, and data lifecycle management. Data must be treated as a strategic asset. Data governance policies must be approved and monitored by the board.",
+    "language": "en"
+  },
+  {
+    "id": "AUDIT-IAAP-001",
+    "source": "IIA Three Lines Model (2020)",
+    "category": "Three Lines Model - First Line",
+    "requirement_text": "Management (first line) must own and manage risks and controls, including risk identification, assessment, mitigation, and monitoring. Operational management must implement control activities and ensure they operate effectively. First line must report risk and control status to second line and the board.",
+    "language": "en"
+  },
+  {
+    "id": "AUDIT-IAAP-002",
+    "source": "IIA Three Lines Model (2020)",
+    "category": "Three Lines Model - Second Line",
+    "requirement_text": "Second line functions (risk management, compliance, quality, security) must provide expertise, support, monitoring, and challenge on risk-related matters. Second line must establish frameworks, policies, and procedures. Second line must not assume first line risk ownership responsibilities.",
+    "language": "en"
+  },
+  {
+    "id": "AUDIT-IAAP-003",
+    "source": "IIA Three Lines Model (2020)",
+    "category": "Three Lines Model - Third Line",
+    "requirement_text": "Internal audit (third line) must provide independent and objective assurance on the adequacy and effectiveness of governance, risk management, and internal controls. Internal audit must not assume risk management or control ownership. The CAE must have direct access to the board.",
+    "language": "en"
+  },
+  {
+    "id": "AUDIT-IAAP-004",
+    "source": "ISACA ITAF Part 2 - Audit Planning",
+    "category": "ITAF - IT Audit Charter",
+    "requirement_text": "An IT audit charter must be established, approved by the board, and reviewed annually. The charter must define the IT audit function's purpose, authority, responsibility, scope, reporting lines, and access rights. The charter must ensure independence and unrestricted access to records, personnel, and systems.",
+    "language": "en"
+  },
+  {
+    "id": "AUDIT-IAAP-005",
+    "source": "ISACA ITAF Part 2 - Audit Planning",
+    "category": "ITAF - Risk-Based Audit Plan",
+    "requirement_text": "The IT audit plan must be risk-based, covering all critical IT systems and processes. The plan must consider inherent risk, control status, audit frequency requirements, and regulatory mandates. The plan must be approved by the audit committee and updated at least annually based on risk changes.",
+    "language": "en"
+  },
+  {
+    "id": "AUDIT-IAAP-006",
+    "source": "ISACA ITAF Part 2 - Audit Execution",
+    "category": "ITAF - Audit Sampling",
+    "requirement_text": "Audit sampling must be statistically valid and documented. Sample sizes must be sufficient to provide reasonable assurance. Sampling methodology (statistical or judgmental) must be justified. Projection of errors to the population must be documented. Sampling risk must be assessed.",
+    "language": "en"
+  },
+  {
+    "id": "AUDIT-IAAP-007",
+    "source": "ISACA ITAF Part 2 - Audit Reporting",
+    "category": "ITAF - Audit Rating",
+    "requirement_text": "IT audit findings must be rated by risk level (critical, high, medium, low) based on business impact and likelihood. Ratings must be consistent across audits. Critical and high findings must include management response with remediation timeline. Overall audit opinion must be expressed.",
+    "language": "en"
+  }
+]

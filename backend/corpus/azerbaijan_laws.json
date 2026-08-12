@@ -1,0 +1,107 @@
+[
+  {
+    "id": "AZ-PDP-001",
+    "source": "Azərbaycan Qanunvericiliyi - Fərdi Məlumatların Qorunması",
+    "category": "Fərdi Məlumatların Emalı",
+    "requirement_text": "Fərdi məlumatların emalı yalnız fərdi məlumat subyektinin razılığı ilə həyata keçirilə bilər. Razılıq sərbəst, aşkar və məlumatlı şəkildə verilməlidir.",
+    "language": "az"
+  },
+  {
+    "id": "AZ-PDP-002",
+    "source": "Azərbaycan Qanunvericiliyi - Fərdi Məlumatların Qorunması",
+    "category": "Fərdi Məlumatların Emalı",
+    "requirement_text": "Fərdi məlumatların toplanması məqsədi açıq şəkildə müəyyən edilməli və bu məqsədə uyğun olaraq emal edilməlidir. Məqsəddən kənar emal qadağandır.",
+    "language": "az"
+  },
+  {
+    "id": "AZ-PDP-003",
+    "source": "Azərbaycan Qanunvericiliyi - Fərdi Məlumatların Qorunması",
+    "category": "Məlumat Təhlükəsizliyi",
+    "requirement_text": "Fərdi məlumatların saxlanması və emalı zamanı məlumatın məxfiliyi, bütövlüyü və əlçatanlığı təmin edilməlidir. Təhlükəsizlik tədbirləri texniki və təşkili səviyyədə tətbiq edilməlidir.",
+    "language": "az"
+  },
+  {
+    "id": "AZ-PDP-004",
+    "source": "Azərbaycan Qanunvericiliyi - Fərdi Məlumatların Qorunması",
+    "category": "Məlumat Subyektinin Hüquqları",
+    "requirement_text": "Fərdi məlumat subyektinin məlumatına giriş, onun düzəliş edilməsi və silinməsi hüququ təmin edilməlidir. Subyekt məlumatın emalına etiraz etmək hüququna malikdir.",
+    "language": "az"
+  },
+  {
+    "id": "AZ-PDP-005",
+    "source": "Azərbaycan Qanunvericiliyi - Fərdi Məlumatların Qorunması",
+    "category": "İnsident Bildirişi",
+    "requirement_text": "Fərdi məlumatların pozulması halında müvafiq orqanlara və təsir edilmiş şəxslərə vaxtında məlumat verilməlidir. Pozulma halları qeyd edilməli və tədqiq edilməlidir.",
+    "language": "az"
+  },
+  {
+    "id": "AZ-PDP-006",
+    "source": "Azərbaycan Qanunvericiliyi - Fərdi Məlumatların Qorunması",
+    "category": "Xüsusi Kateqoriya Məlumatlar",
+    "requirement_text": "Sağlamlıq, dini, siyasi və ya digər həssas məlumatların emalı xüsusi qoruma tələb edir. Bu kateqoriyaya daxil məlumatların emalı üçün əlavə təhlükəsizlik tədbirləri görülməlidir.",
+    "language": "az"
+  },
+  {
+    "id": "AZ-PDP-007",
+    "source": "Azərbaycan Qanunvericiliyi - Fərdi Məlumatların Qorunması",
+    "category": "Beynəlmiləl Məlumat Ötürməsi",
+    "requirement_text": "Fərdi məlumatların xaricə ötürülməsi yalnız adekvat məlumat qorunması səviyyəsi təmin olunan ölkələrə icazə verilməlidir. Beynəlxalq məlumat ötürməsi müvafiq orqan tərəfindən təsdiq edilməlidir.",
+    "language": "az"
+  },
+  {
+    "id": "AZ-CS-001",
+    "source": "Azərbaycan Kibertəhlükəsizlik Qanunvericiliyi",
+    "category": "Kritik İnformasiya İnfrastrukturu",
+    "requirement_text": "Kritik informasiya infrastrukturu obyektləri müəyyən edilməli və qorunmalıdır. Bu obyektlər üçün xüsusi təhlükəsizlik tədbirləri və insident idarəetmə prosedurları tətbiq edilməlidir.",
+    "language": "az"
+  },
+  {
+    "id": "AZ-CS-002",
+    "source": "Azərbaycan Kibertəhlükəsizlik Qanunvericiliyi",
+    "category": "İnsident Bildirişi",
+    "requirement_text": "Kibertəhlükəsizlik insidentləri müvafiq dövlət orqanlarına vaxtında bildirilməlidir. Bildiriş müddəti və formatı qanunvericiliklə müəyyən edilir.",
+    "language": "az"
+  },
+  {
+    "id": "AZ-CS-003",
+    "source": "Azərbaycan Kibertəhlükəsizlik Qanunvericiliyi",
+    "category": "Təhlükəsizlik Auditləri",
+    "requirement_text": "Kritik informasiya infrastrukturu obyektləri müntəzəm kibertəhlükəsizlik auditlərından keçirilməlidir. Audit nəticələri müvafiq orqana təqdim edilməlidir.",
+    "language": "az"
+  },
+  {
+    "id": "AZ-CS-004",
+    "source": "Azərbaycan Kibertəhlükəsizlik Qanunvericiliyi",
+    "category": "İşçi Qüvvəsi Təlimi",
+    "requirement_text": "Kibertəhlükəsizlik sahəsində mütəxəssis hazırlığı və əməkdaşların təlimi təmin edilməlidir. Təlim proqramları aktual kiber təhdidləri əhatə etməlidir.",
+    "language": "az"
+  },
+  {
+    "id": "AZ-CS-005",
+    "source": "Azərbaycan Kibertəhlükəsizlik Qanunvericiliyi",
+    "category": "Məlumat Lokallaşdırılması",
+    "requirement_text": "Azərbaycan vətəndaşlarının fərdi məlumatları Azərbaycan Respublikası ərazisində yerləşən serverlərdə saxlanmalıdır. Məlumatların lokal saxlanması tələbi bank sektoru üçün də keçərlidir.",
+    "language": "az"
+  },
+  {
+    "id": "AZ-BANK-001",
+    "source": "Azərbaycan Bank Sektoru Qaydaları",
+    "category": "Məlumat İdarəçiliyi",
+    "requirement_text": "Banklar müştəri məlumatlarının təhlükəsiz saxlanması üçün adekvat texniki və təşkili tədbirlər görməlidir. Məlumatların klassifikasiyası və girişin məhdudlaşdırılması təmin edilməlidir.",
+    "language": "az"
+  },
+  {
+    "id": "AZ-BANK-002",
+    "source": "Azərbaycan Bank Sektoru Qaydaları",
+    "category": "Maliyyə Məlumatlarının Qorunması",
+    "requirement_text": "Banklar maliyyə əməliyyatları və müştəri məlumatlarının qorunması üçün şifrələmə, giriş nəzarəti və audit tədbirləri tətbiq etməlidir. Bütün əməliyyatlar audit yolu ilə qeyd edilməlidir.",
+    "language": "az"
+  },
+  {
+    "id": "AZ-BANK-003",
+    "source": "Azərbaycan Bank Sektoru Qaydaları",
+    "category": "AI Sistemlərinin İdarəedilməsi",
+    "requirement_text": "Banklarda AI sistemlərinin istifadəsi zamanı bu sistemlərin qərarlarının şəffaflığı, izah edilə bilməsi və insan nəzarəti təmin edilməlidir. AI qərarları üçün məsuliyyət müəyyən edilməlidir.",
+    "language": "az"
+  }
+]
