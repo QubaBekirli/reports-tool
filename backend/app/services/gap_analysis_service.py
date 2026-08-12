@@ -147,6 +147,17 @@ async def run_analysis(analysis_id: str):
         _update(analysis_id, document_classification=classification, progress=45,
                 message=f"Klassifikasiya: {classification.get('detected_type', '?')}")
 
+        # Filter controls to only those matching the detected applicable standard
+        detected_standard = (classification.get("applicable_standard") or "").strip()
+        if detected_standard and controls_to_check:
+            filtered = [
+                c for c in controls_to_check
+                if detected_standard.lower() in c.get("source", "").lower()
+                or c.get("source", "").lower() in detected_standard.lower()
+            ]
+            if filtered:
+                controls_to_check = filtered
+
         # Phase 2: Gap analysis — run controls concurrently in small batches
         total = len(controls_to_check)
         gaps: list[dict] = []
@@ -193,7 +204,7 @@ async def run_analysis(analysis_id: str):
         _update(analysis_id, status="generating_report", progress=88,
                 message="Hesabat hazırlanır...")
 
-        risk_level = _calculate_risk(compliant, partial, missing)
+        risk_level = _calculate_risk(compliant, partial, missing, len(doc_context_full))
         executive_summary = await _generate_executive_summary(
             analysis["document_title"], classification, gaps,
             compliant, partial, missing, risk_level, language, respond_lang
@@ -290,7 +301,7 @@ SƏNƏD MƏTNİ (analiz edilən):
 DƏQİQ qiymətləndirmə et. Sənəd mətnində konkret sübut axtar.
 
 JSON formatında cavab ver (başqa heç nə yazma):
-{{"status":"compliant|partial|missing","justification":"dəqiq izah - sənəddə nə var/yox","standard_requirement":"tələbin qısa xülasəsi","current_document_text":"sənəddən uyğun mətn və ya 'tapılmadı'","gap_analysis":"boşluq varsa detallı təsviri","remediation_proposal":"tövsiyə","evidence_snippet":"sənəddən sübut hissəsi və ya boş","evidence_reference":"sənəddə harada tapıldı"}}"""
+{{"status":"compliant|partial|missing","justification":"dəqiq izah - sənəddə nə var/yox","standard_requirement":"tələbin qısa xülasəsi","current_document_text":"sənəddən uyğun mətn və ya 'tapılmadı'","gap_analysis":"boşluq varsa detallı təsviri","remediation_proposal":"tövsiyə","potential_risks":"bu boşluq hansı risklər yaradır (qısa)","evidence_snippet":"sənəddən sübut hissəsi və ya boş","evidence_reference":"sənəddə harada tapıldı"}}"""
     else:
         system = (
             "You are a senior IT Audit and GRC expert. Your task is to PRECISELY evaluate a specific control requirement against document text. "
@@ -310,7 +321,7 @@ DOCUMENT TEXT (under analysis):
 Evaluate PRECISELY. Search for concrete evidence in the document text.
 
 Respond in JSON (nothing else):
-{{"status":"compliant|partial|missing","justification":"detailed explanation - what exists/missing in document","standard_requirement":"brief summary of requirement","current_document_text":"relevant text from document or 'not found'","gap_analysis":"detailed gap description if any","remediation_proposal":"recommendation","evidence_snippet":"evidence excerpt from document or empty","evidence_reference":"where in document it was found"}}"""
+{{"status":"compliant|partial|missing","justification":"detailed explanation - what exists/missing in document","standard_requirement":"brief summary of requirement","current_document_text":"relevant text from document or 'not found'","gap_analysis":"detailed gap description if any","remediation_proposal":"recommendation","potential_risks":"what risks this gap creates (brief)","evidence_snippet":"evidence excerpt from document or empty","evidence_reference":"where in document it was found"}}"""
 
     try:
         response = await ollama_generate(prompt, system)
@@ -334,6 +345,7 @@ Respond in JSON (nothing else):
             "justification":         result.get("justification", ""),
             "gap_analysis":          result.get("gap_analysis", ""),
             "remediation_proposal":  result.get("remediation_proposal", ""),
+            "potential_risks":       result.get("potential_risks", ""),
             "evidence_snippet":      result.get("evidence_snippet", ""),
             "evidence_reference":    result.get("evidence_reference", ""),
         }
@@ -353,25 +365,59 @@ def _fallback_gap(control: dict, language: str) -> dict:
         "justification":         "Qiymətləndirmə zamanı xəta" if language == "az" else "Error during assessment",
         "gap_analysis":          "",
         "remediation_proposal":  "",
+        "potential_risks":       "",
         "evidence_snippet":      "",
         "evidence_reference":    "",
     }
 
 
-def _calculate_risk(compliant: int, partial: int, missing: int) -> str:
+def _calculate_risk(compliant: int, partial: int, missing: int, doc_size: int = 0) -> str:
     total = compliant + partial + missing
     if total == 0:
         return "medium"
     missing_ratio = missing / total
     partial_ratio = partial / total
-    if missing_ratio > 0.4 or missing_ratio + partial_ratio > 0.7:
-        return "critical"
-    elif missing_ratio > 0.2:
-        return "high"
-    elif missing_ratio > 0.1 or partial_ratio > 0.3:
-        return "medium"
-    else:
+    non_compliant = missing + partial
+    non_compliant_ratio = non_compliant / total
+
+    # Few gaps relative to total controls → don't escalate to critical
+    # Scale threshold based on document size: larger docs expected to have more controls
+    if doc_size > 0:
+        if doc_size < 5000:
+            # Small document — even a few gaps are significant
+            if non_compliant <= 2:
+                return "low"
+            if non_compliant <= 4:
+                return "medium"
+        elif doc_size < 20000:
+            # Medium document
+            if non_compliant <= 3:
+                return "low"
+            if non_compliant <= 6:
+                return "medium"
+        else:
+            # Large document — more controls expected
+            if non_compliant <= 5:
+                return "low"
+            if non_compliant <= 10:
+                return "medium"
+
+    # Ratio-based assessment with absolute count guardrails
+    if non_compliant == 0:
         return "low"
+    if non_compliant <= 2 and missing_ratio < 0.15:
+        return "low"
+    if missing <= 2 and non_compliant_ratio < 0.4:
+        return "medium"
+    if missing_ratio > 0.5 and missing > 5:
+        return "critical"
+    if missing_ratio > 0.4 or non_compliant_ratio > 0.7:
+        return "high"
+    if missing_ratio > 0.2:
+        return "high"
+    if missing_ratio > 0.1 or partial_ratio > 0.3:
+        return "medium"
+    return "low"
 
 
 async def _generate_executive_summary(

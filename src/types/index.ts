@@ -56,6 +56,7 @@ export interface GapResult {
   current_document_text?: string;
   gap_analysis?: string;
   remediation_proposal?: string;
+  potential_risks?: string;
   evidence_snippet?: string;
   evidence_reference?: string;
 }
