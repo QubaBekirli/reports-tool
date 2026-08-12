@@ -74,7 +74,7 @@ async def run_analysis(analysis_id: str):
         return
 
     document_id = analysis["document_id"]
-    language    = analysis["detected_language"]
+    language    = "en" if analysis.get("detected_language") == "en" else "az"
 
     try:
         _update(analysis_id, status="parsing", progress=10, message="Sənəd emal edilir...")
@@ -167,7 +167,7 @@ async def run_analysis(analysis_id: str):
         respond_lang = f"Yalnız {lang_name} dilində cavab ver." if language == "az" else f"Respond ONLY in {lang_name}."
 
         # Compact doc context for per-control checks (keep it short for speed)
-        doc_context_compact = doc_context_full[:2500]
+        doc_context_compact = _build_analysis_context(doc_context_full)
 
         CONCURRENT = 3  # run 3 LLM calls in parallel
         batch_size = CONCURRENT
@@ -371,53 +371,39 @@ def _fallback_gap(control: dict, language: str) -> dict:
     }
 
 
+def _build_analysis_context(document_text: str, limit: int = 7000) -> str:
+    if len(document_text) <= limit:
+        return document_text
+    head = int(limit * 0.6)
+    tail = limit - head
+    return f"{document_text[:head]}\n\n[ Sənədin orta hissəsi ixtisar edilib ]\n\n{document_text[-tail:]}"
+
+
 def _calculate_risk(compliant: int, partial: int, missing: int, doc_size: int = 0) -> str:
     total = compliant + partial + missing
     if total == 0:
         return "medium"
+
     missing_ratio = missing / total
-    partial_ratio = partial / total
     non_compliant = missing + partial
     non_compliant_ratio = non_compliant / total
 
-    # Few gaps relative to total controls → don't escalate to critical
-    # Scale threshold based on document size: larger docs expected to have more controls
-    if doc_size > 0:
-        if doc_size < 5000:
-            # Small document — even a few gaps are significant
-            if non_compliant <= 2:
-                return "low"
-            if non_compliant <= 4:
-                return "medium"
-        elif doc_size < 20000:
-            # Medium document
-            if non_compliant <= 3:
-                return "low"
-            if non_compliant <= 6:
-                return "medium"
-        else:
-            # Large document — more controls expected
-            if non_compliant <= 5:
-                return "low"
-            if non_compliant <= 10:
-                return "medium"
-
-    # Ratio-based assessment with absolute count guardrails
-    if non_compliant == 0:
-        return "low"
-    if non_compliant <= 2 and missing_ratio < 0.15:
-        return "low"
-    if missing <= 2 and non_compliant_ratio < 0.4:
-        return "medium"
-    if missing_ratio > 0.5 and missing > 5:
+    # Partial findings alone do not justify a critical classification.
+    if missing == 0:
+        return "medium" if partial_ratio(partial, total) >= 0.5 else "low"
+    if missing >= 8 and missing_ratio >= 0.6:
         return "critical"
-    if missing_ratio > 0.4 or non_compliant_ratio > 0.7:
+    if missing >= 4 and missing_ratio >= 0.4:
         return "high"
-    if missing_ratio > 0.2:
+    if missing >= 2 and (missing_ratio >= 0.2 or non_compliant_ratio >= 0.5):
         return "high"
-    if missing_ratio > 0.1 or partial_ratio > 0.3:
+    if missing_ratio >= 0.1 or partial >= 2:
         return "medium"
     return "low"
+
+
+def partial_ratio(partial: int, total: int) -> float:
+    return partial / total if total else 0.0
 
 
 async def _generate_executive_summary(

@@ -18,7 +18,7 @@ async def start_analysis(req: AnalyzeRequest):
     analysis_id = create_analysis(
         document_id=req.document_id,
         document_title=doc["title"],
-        language=doc["detected_language"],
+        language="en" if doc.get("detected_language") == "en" else "az",
     )
 
     asyncio.create_task(run_analysis(analysis_id))

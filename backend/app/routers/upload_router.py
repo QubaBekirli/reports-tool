@@ -52,7 +52,7 @@ async def upload_document(file: UploadFile = File(...)):
         "uploaded_at": datetime.now().isoformat(),
         "status": "uploaded",
         "chunk_count": len(chunks),
-        "extracted_text": text[:10000],
+        "extracted_text": text[:50000],
         "error_message": None,
     }
     storage_service.save_document(doc_record)

@@ -59,8 +59,7 @@ RISK_LABELS = {
 
 
 def _get_lang(result: dict) -> str:
-    lang = result.get("detected_language", "az")
-    return lang if lang in ("az", "en") else "az"
+    return "en" if result.get("detected_language") == "en" else "az"
 
 
 def generate_docx(result: dict) -> bytes:

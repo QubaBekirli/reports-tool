@@ -44,6 +44,7 @@ class GapResult(BaseModel):
     current_document_text: str = ""
     gap_analysis: str = ""
     remediation_proposal: str = ""
+    potential_risks: str = ""
     evidence_snippet: Optional[str] = None
     evidence_reference: Optional[str] = None
 
