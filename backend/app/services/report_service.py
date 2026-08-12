@@ -166,6 +166,10 @@ def generate_docx(result: dict) -> bytes:
                 rem_label = "Remediation təklifi" if lang == "az" else "Remediation proposal"
                 doc.add_paragraph(f"{rem_label}: {gap['remediation_proposal']}")
 
+            if gap.get("potential_risks"):
+                risk_label = "Potensial risklər" if lang == "az" else "Potential risks"
+                doc.add_paragraph(f"{risk_label}: {gap['potential_risks']}")
+
             if gap.get("justification"):
                 just_label = "Əsaslandırma" if lang == "az" else "Justification"
                 doc.add_paragraph(f"{just_label}: {gap.get('justification', '')}")
@@ -368,6 +372,13 @@ def generate_pdf(result: dict) -> bytes:
                 elements.append(Paragraph(
                     f"<b>{rem_label}:</b> {_esc(gap['remediation_proposal'])}",
                     remediation_style,
+                ))
+
+            if gap.get("potential_risks"):
+                pr_label = "Potensial risklər" if lang == "az" else "Potential risks"
+                elements.append(Paragraph(
+                    f"<b>{pr_label}:</b> {_esc(gap['potential_risks'])}",
+                    body_style
                 ))
 
             if gap.get("justification"):

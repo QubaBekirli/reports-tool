@@ -1,6 +1,7 @@
 import {
   Shield, LayoutDashboard, FileSearch, FileText, FileStack,
   MessageSquare, BookOpen, Settings, Circle, Loader2,
+  AlertTriangle, WifiOff,
 } from 'lucide-react';
 import type { PageId, ActiveAnalysis } from '@/App';
 import type { AnalysisProgress } from '@/types';
@@ -98,20 +99,50 @@ export function Sidebar({ currentPage, onNavigate, health, activeAnalysis, globa
 
       {/* Health status footer */}
       <div className="border-t border-slate-800 px-4 py-4">
+        {health.status !== 'ok' && health.status !== 'checking' && (
+          <div className="mb-3 flex items-start gap-2 rounded-lg border border-red-500/30 bg-red-500/10 p-2.5">
+            <WifiOff size={14} className="mt-0.5 flex-shrink-0 text-red-400" />
+            <div>
+              <p className="text-xs font-medium text-red-400">Backend deaktiv</p>
+              <p className="mt-0.5 text-[10px] leading-relaxed text-red-400/70">
+                Server işləmir. Analiz, chat və sənəd yaratma işləməyəcək. Server-i başladın.
+              </p>
+            </div>
+          </div>
+        )}
+        {health.status === 'ok' && (!health.ollama || !health.chroma) && (
+          <div className="mb-3 flex items-start gap-2 rounded-lg border border-amber-500/30 bg-amber-500/10 p-2.5">
+            <AlertTriangle size={14} className="mt-0.5 flex-shrink-0 text-amber-400" />
+            <div>
+              <p className="text-xs font-medium text-amber-400">Qismən aktiv</p>
+              <p className="mt-0.5 text-[10px] leading-relaxed text-amber-400/70">
+                {!health.ollama && !health.chroma
+                  ? 'Ollama və ChromaDB işləmir. AI funksiyaları məhdud olacaq.'
+                  : !health.ollama
+                    ? 'Ollama işləmir. AI cavabları və analiz işləməyəcək.'
+                    : 'ChromaDB işləmir. Axtarış və analiz işləməyəcək.'}
+              </p>
+            </div>
+          </div>
+        )}
         <div className="space-y-2">
           {[
+            { label: 'Backend',  ok: health.status === 'ok' },
             { label: 'Ollama',    ok: health.ollama },
             { label: 'ChromaDB', ok: health.chroma },
-            { label: 'Backend',  ok: health.status === 'ok' },
           ].map(({ label, ok }) => (
             <div key={label} className="flex items-center justify-between text-xs">
               <span className="text-slate-500">{label}</span>
               <div className="flex items-center gap-1.5">
-                <Circle
-                  size={8}
-                  fill={ok ? 'currentColor' : 'none'}
-                  className={ok ? 'text-emerald-500' : 'text-slate-600'}
-                />
+                {label === 'Backend' && health.status === 'checking' ? (
+                  <Loader2 size={10} className="animate-spin text-slate-500" />
+                ) : (
+                  <Circle
+                    size={8}
+                    fill={ok ? 'currentColor' : 'none'}
+                    className={ok ? 'text-emerald-500' : 'text-slate-600'}
+                  />
+                )}
                 <span className={ok ? 'text-emerald-400' : 'text-slate-500'}>
                   {label === 'Backend' && health.status === 'checking'
                     ? 'Yoxlanılır...'

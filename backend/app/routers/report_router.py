@@ -11,12 +11,17 @@ router = APIRouter()
 async def download_report(
     analysis_id: str,
     format: str = Query("docx", pattern="^(docx|pdf)$"),
+    language: str = Query(None, pattern="^(az|en)$"),
 ):
     result = get_result(analysis_id)
     if not result:
         raise HTTPException(status_code=404, detail="Analiz tapılmadı")
     if result.get("status") != "completed":
         raise HTTPException(status_code=400, detail="Analiz hələ tamamlanmayıb")
+
+    if language:
+        result = dict(result)
+        result["detected_language"] = language
 
     if format == "docx":
         content = generate_docx(result)

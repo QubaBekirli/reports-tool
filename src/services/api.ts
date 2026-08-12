@@ -103,10 +103,11 @@ export const api = {
     await http(`/api/analyses/${analysisId}`, { method: 'DELETE' });
   },
 
-  async downloadReport(analysisId: string, format: 'docx' | 'pdf'): Promise<Blob> {
+  async downloadReport(analysisId: string, format: 'docx' | 'pdf', language?: 'az' | 'en'): Promise<Blob> {
     let res: Response;
+    const langParam = language ? `&language=${language}` : '';
     try {
-      res = await fetch(`${API_BASE}/api/report/${analysisId}/download?format=${format}`);
+      res = await fetch(`${API_BASE}/api/report/${analysisId}/download?format=${format}${langParam}`);
     } catch (e) {
       throw new Error(_formatNetError(e, 'Hesabat endirmə xətası'));
     }

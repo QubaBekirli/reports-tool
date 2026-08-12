@@ -62,6 +62,7 @@ export function ChatPage({ settings }: ChatPageProps) {
   const [docsLoading, setDocsLoading] = useState(false);
   const [showDocPanel, setShowDocPanel] = useState(false);
   const [summarizing, setSummarizing] = useState<string | null>(null);
+  const [expandedSources, setExpandedSources] = useState<Set<string>>(new Set());
   const endRef   = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
 
@@ -290,12 +291,36 @@ export function ChatPage({ settings }: ChatPageProps) {
                         <span>Mənbələr ({sourcesMap[idx].length})</span>
                       </div>
                       <div className="space-y-1.5">
-                        {sourcesMap[idx].map((src, sIdx) => (
-                          <div key={sIdx} className="rounded-md bg-slate-800/50 p-2 text-xs">
-                            <p className="font-medium text-violet-300">{src.source}</p>
-                            <p className="mt-0.5 text-slate-500 line-clamp-2">{src.snippet}</p>
-                          </div>
-                        ))}
+                        {sourcesMap[idx].map((src, sIdx) => {
+                          const key = `${idx}-${sIdx}`;
+                          const isOpen = expandedSources.has(key);
+                          const isLong = src.snippet && src.snippet.length > 120;
+                          return (
+                            <div key={sIdx} className="rounded-md bg-slate-800/50 p-2 text-xs">
+                              <div className="flex items-center justify-between gap-2">
+                                <p className="font-medium text-violet-300">{src.source}</p>
+                                {isLong && (
+                                  <button
+                                    onClick={() =>
+                                      setExpandedSources((prev) => {
+                                        const next = new Set(prev);
+                                        if (next.has(key)) next.delete(key);
+                                        else next.add(key);
+                                        return next;
+                                      })
+                                    }
+                                    className="text-violet-400 hover:text-violet-300 text-[10px] font-medium flex-shrink-0"
+                                  >
+                                    {isOpen ? 'Yığışdır' : 'Tam oxu'}
+                                  </button>
+                                )}
+                              </div>
+                              <p className={`mt-0.5 text-slate-500 ${!isOpen && isLong ? 'line-clamp-2' : ''}`}>
+                                {src.snippet}
+                              </p>
+                            </div>
+                          );
+                        })}
                       </div>
                     </div>
                   )}

@@ -60,6 +60,8 @@ export function KnowledgeBasePage() {
   // Related KB docs for corpus search
   const [relatedDocs, setRelatedDocs] = useState<KBDocument[]>([]);
   const [relatedQuery, setRelatedQuery] = useState('');
+  const [expandedControl, setExpandedControl] = useState<string | null>(null);
+  const [viewingControl, setViewingControl] = useState<CorpusControl | null>(null);
   const inputRef = useRef<HTMLInputElement>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
 
@@ -367,21 +369,33 @@ export function KnowledgeBasePage() {
           ) : (
             <div className="space-y-2">
               <p className="text-sm text-slate-500">{filtered.length} nəticə</p>
-              {filtered.slice(0, 100).map((c) => (
-                <div key={c.id} className="card p-4 animate-slide-in">
-                  <div className="flex items-start justify-between gap-4">
-                    <div className="min-w-0 flex-1">
-                      <div className="flex flex-wrap items-center gap-2">
-                        <span className="badge bg-violet-500/10 text-violet-400">{c.source}</span>
-                        <span className="badge bg-slate-800 text-slate-400">{c.category}</span>
-                        <span className="badge bg-slate-800 text-slate-500 uppercase">{c.language}</span>
+              {filtered.slice(0, 100).map((c) => {
+                const isExpanded = expandedControl === c.id;
+                const isLong = c.requirement_text.length > 150;
+                return (
+                  <div key={c.id} className="card p-4 animate-slide-in cursor-pointer hover:border-violet-500/30 transition-all" onClick={() => setViewingControl(c)}>
+                    <div className="flex items-start justify-between gap-4">
+                      <div className="min-w-0 flex-1">
+                        <div className="flex flex-wrap items-center gap-2">
+                          <span className="badge bg-violet-500/10 text-violet-400">{c.source}</span>
+                          <span className="badge bg-slate-800 text-slate-400">{c.category}</span>
+                          <span className="badge bg-slate-800 text-slate-500 uppercase">{c.language}</span>
+                        </div>
+                        <p className="mt-2 text-sm text-slate-300">
+                          {isLong && !isExpanded
+                            ? <>{c.requirement_text.slice(0, 150)}... <button className="text-violet-400 hover:text-violet-300 text-xs font-medium" onClick={(e) => { e.stopPropagation(); setExpandedControl(c.id); }}>Ətraflı oxu</button></>
+                            : c.requirement_text}
+                        </p>
+                        {isExpanded && isLong && (
+                          <button className="mt-1 text-xs text-violet-400 hover:text-violet-300" onClick={(e) => { e.stopPropagation(); setExpandedControl(null); }}>Yığışdır</button>
+                        )}
+                        <p className="mt-1 text-xs text-slate-600">ID: {c.id}</p>
                       </div>
-                      <p className="mt-2 text-sm text-slate-300">{c.requirement_text}</p>
-                      <p className="mt-1 text-xs text-slate-600">ID: {c.id}</p>
+                      <Eye size={14} className="text-slate-600 flex-shrink-0 mt-1" />
                     </div>
                   </div>
-                </div>
-              ))}
+                );
+              })}
               {filtered.length > 100 && (
                 <p className="text-center text-xs text-slate-500 py-2">
                   İlk 100 nəticə göstərilir. Daha dəqiq axtarış üçün filtr istifadə edin.
@@ -614,6 +628,41 @@ export function KnowledgeBasePage() {
                 {editLoading ? <Loader2 size={16} className="animate-spin" /> : <Save size={16} />}
                 Yadda saxla
               </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* ── Corpus Control Full-Text Modal ── */}
+      {viewingControl && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 p-4 animate-fade-in"
+          onClick={() => setViewingControl(null)}
+        >
+          <div
+            className="flex max-h-[85vh] w-full max-w-2xl flex-col overflow-hidden rounded-xl bg-slate-900 shadow-2xl border border-slate-700"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="flex items-center justify-between border-b border-slate-700 px-6 py-4">
+              <div className="flex items-center gap-2">
+                <BookOpen size={18} className="text-violet-400" />
+                <h2 className="text-base font-bold text-slate-100">Nəzarət Detalları</h2>
+              </div>
+              <button onClick={() => setViewingControl(null)} className="text-slate-400 hover:text-slate-200">
+                <X size={20} />
+              </button>
+            </div>
+            <div className="overflow-y-auto px-6 py-5 space-y-4">
+              <div className="flex flex-wrap gap-2">
+                <span className="badge bg-violet-500/10 text-violet-400">{viewingControl.source}</span>
+                <span className="badge bg-slate-800 text-slate-400">{viewingControl.category}</span>
+                <span className="badge bg-slate-800 text-slate-500 uppercase">{viewingControl.language}</span>
+                <span className="badge bg-slate-800 text-slate-500">ID: {viewingControl.id}</span>
+              </div>
+              <div>
+                <p className="text-xs font-medium text-slate-500 mb-1">Tələb Mətni</p>
+                <p className="text-sm leading-relaxed text-slate-200 whitespace-pre-line">{viewingControl.requirement_text}</p>
+              </div>
             </div>
           </div>
         </div>
